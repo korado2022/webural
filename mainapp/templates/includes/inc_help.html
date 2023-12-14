@@ -1,0 +1,97 @@
+{# Блок Помощь #}
+{% load static %}
+ 
+<!-- Блок Помощь -->
+ <div class="container d-flex flex-row" style="margin-top: 100px;">
+    <div class="blok_help" style="max-width: 420px;">
+        <div class="blok_help_item">
+            <div class="d-flex justify-content-start ml50">
+                <h2 class="elem">ПОМОЩЬ</h2>
+            </div>
+        </div>
+        <div class="blok_help_item">
+            <p class="title_text" style="margin-left: 50px;">Напишите нам.<br> Это просто.</p>
+        </div>
+        <div class="blok_help_item">
+            <p class="text_w ml50">Мы заботимся о вашем комфорте и хотим помочь вам 
+                максимально эффективно использовать наши услуги. 
+                Если у вас есть какие-либо вопросы или предложения, 
+                пожалуйста, напишите нам. Мы будем рады помочь!</p>
+        </div>
+        <div class="blok_help_item d-flex flex-row ml50" style="margin-top: 30px;">
+            <div class="call_item">
+                <img class="" src="{% static 'img/call.jpg' %}" alt="img_call" style="border-radius: 35px;">
+            </div>
+            <div class="call_item d-flex flex-column justify-content-around" style="margin-left: 20px;">
+                <div class="text_w">Телефон</div>
+                <div class="text_w text_w2">+7(343)206-85-10</div>
+            </div>
+        </div>
+        <div class="blok_help_item d-flex flex-row ml50" style="margin-top: 30px;">
+            <div class="call_item">
+                <img class="" src="{% static 'img/time.jpg' %}" alt="img_call" style="border-radius: 35px;">
+            </div>
+            <div class="call_item d-flex flex-column justify-content-around" style="margin-left: 20px;">
+                <div class="text_w">Понедельник - пятница</div>
+                <div class="text_w text_w2">09.00 - 17.00</div>
+            </div>
+        </div>
+        <div class="blok_help_item d-flex flex-row ml50" style="margin-top: 30px;">
+            <div class="call_item">
+                <img class="" src="{% static 'img/address.jpg' %}" alt="img_call" style="border-radius: 35px;">
+            </div>
+            <div class="call_item d-flex flex-column justify-content-around" style="margin-left: 20px;">
+                <div class="text_w">Адрес:</div>
+                <div class="text_w text_w2">620137, г.Екатеринбург, 
+                    <br>ул.Вилонова, д.45Е, офис 407
+                </div>
+            </div>
+        </div>
+       
+    </div>
+    <div class="blok_form" style="margin-left: 80px;">
+        <form class="row g-3">
+            <div class="col-md-6 text_w">
+                <label for="inputFullName" class="form-label">ФИО</label>
+                <input type="password" class="form-control form-control-lg" id="inputFullName" placeholder="Иванов Иван Иванович">
+              </div>
+            <div class="col-md-6 text_w">
+              <label for="inputEmail4" class="form-label">Эл. адрес</label>
+              <input type="email" class="form-control form-control-lg" id="inputEmail4" placeholder="name@example.com">
+            </div>
+            
+            <div class="col-md-6 text_w">
+              <label for="inputPhone" class="form-label">Телефон</label>
+              <input type="phone" class="form-control form-control-lg" id="inputPhone" placeholder="+79991234567">
+            </div>
+            <div class="col-md-6 text_w">
+              <label for="inputCompany" class="form-label">Компания</label>
+              <input type="text" class="form-control form-control-lg" id="inputCompany" 
+              placeholder="Укажите название Вашей компании">
+            </div>
+            <div class="col-12 text_w">
+                <label for="inputMessage" class="form-label">Сообщение</label>
+                <textarea class="form-control form-control-lg" placeholder="Напишите Ваше сообщение здесь" 
+                id="inputMessage" style="height: 100px"></textarea>
+                
+            </div>
+            <!---->
+            <div class="form-check text_w" style="margin-left: 10px;">
+                <input class="form-check-input" type="checkbox" value="Y" id="flexCheckChecked" checked>
+                <label class="form-check-label label_block" for="flexCheckChecked">
+                    Я согласен на <a href="{% url 'mainapp:privacy' %}" target="_blank" class="licence_a">
+                        обработку персональных данных</a>
+                </label>
+            </div>
+            <!---->
+            <div class="col-12">
+                <button class="pc_btn pc_btn_wi" type="submit">Отправить</button>
+            </div>
+          </form>
+    </div>
+</div>
+<!-- КОНЕЦ Блок Помощь -->
+
+
+
+{# КОНЕЦ Блока Помощь #}

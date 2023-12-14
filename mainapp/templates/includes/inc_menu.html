@@ -1,0 +1,96 @@
+{# Блок меню #}
+{% load static %}
+<div class="">
+    <!-- Блок Topbar -->
+    <div class="topbar">
+        <div class="row">
+ 
+            <div class="col d-flex flex-row justify-content-center">
+                <img src="{% static 'img/time_work.svg' %}" alt="logo_time" class="d-inline-block" style="margin-right: 10px;">
+                Понедельник - пятница: 9.00 - 17.00
+            </div>
+            <div class="col d-flex flex-row justify-content-center">
+                <img src="{% static 'img/locat.svg' %}" alt="logo_location" style="margin-right: 10px;">
+                г.Екатеринбург, ул. Вилонова, 45Е, офис 407
+            </div>
+            <div class="col">
+                 
+            </div>
+        </div>
+    </div>
+     <!-- КОНЕЦ Блока Topbar -->
+
+     <!-- Блок меню-->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid" style="background-color: #E96300;height: 90px;">
+             <a class="navbar-brand d-flex flex-row" href="{% url 'mainapp:index' %}">
+                 <img src="{% static 'img/logo1.png' %}" alt="Logo" width="160" height="100" 
+                    class="d-inline-block" style="text-align: center;">
+                 <span class="title_menu">КОМПЛЕКСНАЯ<br> ПОСТАВКА<br> ОБОРУДОВАНИЯ КИПиА</span>
+            </a>
+             
+            <div class="collapse navbar-collapse" style="margin-left: 50px;font-size: 1.2rem;">
+                 <ul class="nav nav-underline me-auto mb-2 mb-lg-0">
+                     
+                     <li class="nav-item web">
+                         <a class="nav-link active" aria-current="page" href="{% url 'mainapp:index' %}">Главная</a>
+                     </li>
+                     <li class="nav-item">
+                         <a class="nav-link" aria-current="page" href="{% url 'mainapp:catalog' %}">Каталог</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="{% url 'mainapp:kipa' %}">КИПиА</a>
+                    </li>
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" 
+                            data-bs-toggle="dropdown" aria-expanded="false">Услуги
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <li><a class="dropdown-item" href="{% url 'mainapp:stendy-datchikov' %}">Cтенды датчиков</a></li>
+                          <li><a class="dropdown-item" href="{% url 'mainapp:puskonaladochnye-raboty' %}">Пусконаладочные работы</a></li>
+                          <li><a class="dropdown-item" href="{% url 'mainapp:elektromontazhnye-raboty' %}">Электромонтажные работы</a></li>
+                          <li><a class="dropdown-item" href="{% url 'mainapp:proektirovanie-kip' %}">Проектирование КИПиА</a></li>
+                        </ul>
+                      </li>
+                     <li class="nav-item">
+                         <a class="nav-link" aria-current="page" href="{% url 'mainapp:portfolio' %}">Портфолио</a>
+                     </li>
+                    
+                     <li class="nav-item">
+                         <a class="nav-link" aria-current="page" href="{% url 'mainapp:contacts' %}">Контакты</a>
+                     </li>
+                 </ul>
+                 
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                        <button class="btn btn-tlf" type="submit">
+                            <a href="tel:+73432068510" class="tel-a">
+                                <img src="{% static 'img/tlf.jpg' %}" alt="tel" style="height: 30px;width: 30px;">
+                                <span class="tel">+7(343)206-85-10</span>
+                            </a>
+                        </button>
+                    </div>
+            </div>
+        </div>
+    </nav>
+     <!-- КОНЕЦ Блок меню-->
+     <!-- Блок Баннер-->
+    <div>
+        <div>
+            <div>
+                <img src="{% static 'img/photo/Image1.jpg' %}" id="image_1" width="100%" style="position: absolute;">
+                <img src="{% static 'img/photo/Image2.jpg' %}" id="image_2" width="100%" style="opacity: 0; filter: alpha(opacity=0); position: absolute;">
+                <img src="{% static 'img/photo/Image3.jpg' %}" id="image_3" width="100%" style="opacity: 0; filter: alpha(opacity=0); position: absolute;">
+                <img src="{% static 'img/photo/Image4.jpg' %}" id="image_4" width="100%" style="opacity: 0; filter: alpha(opacity=0); position: absolute;">
+                <img src="{% static 'img/photo/Image5.jpg' %}" id="image_5" width="100%" style="opacity: 0; filter: alpha(opacity=0); position: absolute;">
+                <img src="{% static 'img/photo/Image6.jpg' %}" id="image_6" width="100%" style="opacity: 0; filter: alpha(opacity=0); position: absolute;">
+                <img src="{% static 'img/photo/Image7.jpg' %}" id="image_7" width="100%" style="opacity: 0; filter: alpha(opacity=0); position: absolute;">
+                <img src="{% static 'img/photo/Image8.jpg' %}" id="image_8" width="100%" style="opacity: 0; filter: alpha(opacity=0); position: absolute;">
+            </div>
+            <hr>
+        </div>
+    </div>
+    <!-- КОНЕЦ Блок Баннер-->
+  
+</div>
+
+{# КОНЕЦ Блок меню #}

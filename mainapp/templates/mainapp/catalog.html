@@ -1,0 +1,228 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+{% block content %}
+
+
+   
+    <!-- Блок Каталог -->
+    <div class="container" style="display: flex;margin-top: 600px;">
+        <!--Левая колонка-->
+        <div class="col-md-3 l_c" style="background: #E96300;color: white;">
+            <h2 style="margin-top: 20px;" id="catalog-product"> Каталог</h2>
+            <ul class="list-group">
+                <li class="list-group-item activ"> <a href="#">Бобышки</a> </li>
+                <li class="list-group-item"> <a href="#">Блоки клапанные БКН1, БКН2, БКН3</a> </li>
+                <li class="list-group-item"> <a href="#">Вентели пробоотборные</a> </li>
+                <li class="list-group-item"> <a href="#">Гильзы защитные</a> </li>
+                <li class="list-group-item"> <a href="#">Демпферные трубки</a> </li>
+            </ul>
+        </div>
+        <!--КОНЕЦ Левая колонка-->
+        <!--Карточки товаров-->
+        <div class="col-md-10 col-sm-12 d-flex flex-wrap justify-content-around">
+            <!--Карточка-->
+            <div class="product_card">
+                <div class="">
+                    <img class="" src="{% static 'img/product/catalog/01-bobyshka/bobyshka_bp01_img.png' %}" width="320px" height="250px"
+                    style="border-radius: 20px;">
+                </div>
+                <div class="d-flex flex-column justify-content-between" style="margin: 10px 0 0 20px;height: 115px;">
+                    <div class="pc_title">Бобышки тип БП01</div>
+                    <div class="d-flex">
+                        <div class="">
+                            <a class="pc_btn pc_btn_oran" href="#" role="button"
+                            style="">В корзину</a>
+                        </div>
+                        <div class="d-flex flex-row align-items-center" style="margin-left: 60px;">
+                            <a class="pc_link" href="{% url 'mainapp:detail_exam' %}#catalog-product" style="text-decoration: none;">Подробнее</a>
+                            <img src="{% static 'img/vector_211.png' %}" width="32px" height="20px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--КОНЕЦ Карточка-->
+            <!--Карточка-->
+            <div class="product_card">
+                <div class="">
+                    <img class="" src="{% static 'img/product/catalog/01-bobyshka/bobyshka_bp02_img.png' %}" width="320px" height="250px"
+                    style="border-radius: 20px;">
+                </div>
+                <div class="d-flex flex-column justify-content-between" style="margin: 10px 0 0 20px;height: 115px;">
+                    <div class="pc_title">Бобышки тип БП02</div>
+                    <div class="d-flex">
+                        <div class="">
+                            <a class="pc_btn pc_btn_oran" href="#" role="button"
+                            style="">В корзину</a>
+                        </div>
+                        <div class="d-flex flex-row align-items-center" style="margin-left: 60px;">
+                            <a class="pc_link" href="" style="text-decoration: none;">Подробнее</a>
+                            <img src="{% static 'img/vector_211.png' %}" width="32px" height="20px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--КОНЕЦ Карточка-->
+            <!--Карточка-->
+            <div class="product_card">
+                <div class="">
+                    <img class="" src="{% static 'img/product/catalog/01-bobyshka/bobyshka_bp03_img.png' %}" width="320px" height="250px"
+                    style="border-radius: 20px;">
+                </div>
+                <div class="d-flex flex-column justify-content-between" style="margin: 10px 0 0 20px;height: 115px;">
+                    <div class="pc_title">Бобышки тип БП03</div>
+                    <div class="d-flex">
+                        <div class="">
+                            <a class="pc_btn pc_btn_oran" href="#" role="button"
+                            style="">В корзину</a>
+                        </div>
+                        <div class="d-flex flex-row align-items-center" style="margin-left: 60px;">
+                            <a class="pc_link" href="" style="text-decoration: none;">Подробнее</a>
+                            <img src="{% static 'img/vector_211.png' %}" width="32px" height="20px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--КОНЕЦ Карточка-->
+            <!--Карточка-->
+            <div class="product_card">
+                <div class="">
+                    <img class="" src="{% static 'img/atchik_stands/klapan.jpg' %}" width="320px" height="250px"
+                    style="border-radius: 20px;">
+                </div>
+                <div class="d-flex flex-column justify-content-between" style="margin: 10px 0 0 20px;height: 115px;">
+                    <div class="pc_title">Бобышки тип БП04</div>
+                    <div class="d-flex">
+                        <div class="">
+                            <a class="pc_btn pc_btn_oran" href="#" role="button"
+                            style="">В корзину</a>
+                        </div>
+                        <div class="d-flex flex-row align-items-center" style="margin-left: 60px;">
+                            <a class="pc_link" href="" style="text-decoration: none;">Подробнее</a>
+                            <img src="{% static 'img/vector_211.png' %}" width="32px" height="20px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--КОНЕЦ Карточка-->
+            <!--Карточка-->
+            <div class="product_card">
+                <div class="">
+                    <img class="" src="{% static 'img/atchik_stands/klapan.jpg' %}" width="320px" height="250px"
+                    style="border-radius: 20px;">
+                </div>
+                <div class="d-flex flex-column justify-content-between" style="margin: 10px 0 0 20px;height: 115px;">
+                    <div class="pc_title">Бобышки тип БП05</div>
+                    <div class="d-flex">
+                        <div class="">
+                            <a class="pc_btn pc_btn_oran" href="#" role="button"
+                            style="">В корзину</a>
+                        </div>
+                        <div class="d-flex flex-row align-items-center" style="margin-left: 60px;">
+                            <a class="pc_link" href="" style="text-decoration: none;">Подробнее</a>
+                            <img src="{% static 'img/vector_211.png' %}" width="32px" height="20px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--КОНЕЦ Карточка-->
+            <!--Карточка-->
+            <div class="product_card">
+                <div class="">
+                    <img class="" src="{% static 'img/atchik_stands/klapan.jpg' %}" width="320px" height="250px"
+                    style="border-radius: 20px;">
+                </div>
+                <div class="d-flex flex-column justify-content-between" style="margin: 10px 0 0 20px;height: 115px;">
+                    <div class="pc_title">Бобышки по ОСТ</div>
+                    <div class="d-flex">
+                        <div class="">
+                            <a class="pc_btn pc_btn_oran" href="#" role="button"
+                            style="">В корзину</a>
+                        </div>
+                        <div class="d-flex flex-row align-items-center" style="margin-left: 60px;">
+                            <a class="pc_link" href="" style="text-decoration: none;">Подробнее</a>
+                            <img src="{% static 'img/vector_211.png' %}" width="32px" height="20px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--КОНЕЦ Карточка-->
+            <!--Карточка-->
+            <div class="product_card">
+                <div class="">
+                    <img class="" src="{% static 'img/atchik_stands/klapan.jpg' %}" width="320px" height="250px"
+                    style="border-radius: 20px;">
+                </div>
+                <div class="d-flex flex-column justify-content-between" style="margin: 10px 0 0 20px;height: 115px;">
+                    <div class="pc_title">Бобышки тип БС</div>
+                    <div class="d-flex">
+                        <div class="">
+                            <a class="pc_btn pc_btn_oran" href="#" role="button"
+                            style="">В корзину</a>
+                        </div>
+                        <div class="d-flex flex-row align-items-center" style="margin-left: 60px;">
+                            <a class="pc_link" href="" style="text-decoration: none;">Подробнее</a>
+                            <img src="{% static 'img/vector_211.png' %}" width="32px" height="20px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--КОНЕЦ Карточка-->
+            <!--Карточка-->
+            <div class="product_card">
+                <div class="">
+                    <img class="" src="{% static 'img/atchik_stands/klapan.jpg' %}" width="320px" height="250px"
+                    style="border-radius: 20px;">
+                </div>
+                <div class="d-flex flex-column justify-content-between" style="margin: 10px 0 0 20px;height: 115px;">
+                    <div class="pc_title">Бобышки тип БК</div>
+                    <div class="d-flex">
+                        <div class="">
+                            <a class="pc_btn pc_btn_oran" href="#" role="button"
+                            style="">В корзину</a>
+                        </div>
+                        <div class="d-flex flex-row align-items-center" style="margin-left: 60px;">
+                            <a class="pc_link" href="" style="text-decoration: none;">Подробнее</a>
+                            <img src="{% static 'img/vector_211.png' %}" width="32px" height="20px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--КОНЕЦ Карточка-->
+            <!--Карточка-->
+            <div class="product_card">
+                <div class="">
+                    <img class="" src="{% static 'img/atchik_stands/klapan.jpg' %}" width="320px" height="250px"
+                    style="border-radius: 20px;">
+                </div>
+                <div class="d-flex flex-column justify-content-between" style="margin: 10px 0 0 20px;height: 115px;">
+                    <div class="pc_title">Бобышки по ТУ</div>
+                    <div class="d-flex">
+                        <div class="">
+                            <a class="pc_btn pc_btn_oran" href="#" role="button"
+                            style="">В корзину</a>
+                        </div>
+                        <div class="d-flex flex-row align-items-center" style="margin-left: 60px;">
+                            <a class="pc_link" href="" style="text-decoration: none;">Подробнее</a>
+                            <img src="{% static 'img/vector_211.png' %}" width="32px" height="20px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--КОНЕЦ Карточка-->
+            
+
+
+
+
+        </div>
+        <!--КОНЕЦ Карточки товаров-->
+    </div>
+    <!-- КОНЕЦ Блок Каталог -->
+   
+    {% block help %}
+    {% include 'includes/inc_help.html' %}
+    {% endblock %}
+
+    
+    
+    {% endblock %}

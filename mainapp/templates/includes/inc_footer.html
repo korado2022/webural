@@ -1,0 +1,56 @@
+{# Блок Footer #}
+{% load static %}
+
+<!-- Блок Футер -->
+<div class="" style="background: black;margin-top: 40px;">
+    <hr>
+    <div class="" style="margin-top: 120px;">
+        <div class="container">
+            <div class="d-flex flex-row flex-wrap">
+                <div class="">
+                    <a class="navbar-brand" href="#">
+                        <img src="{% static 'img/logo1.png' %}" alt="Logo" width="160" height="100" class="d-inline-block align-text-bottom" style="color: white;">
+                        <span style="font-size: 4rem;font: Cabin;font-weight: 700;color: white;border-color: white;">УралКИП</span></a>
+                    
+                </div>
+                <div class="block-vert-line" style="margin-left: 140px;"></div>
+                <div class="d-flex flex-column ml50 fl">
+                    <div class="text_w title_text" style="margin-left: 20px;">Продукция</div>
+                    <hr size="10px" width="40px" color="#E96300" style="margin-left: 20px;">
+                    <ul class="d-flex flex-column justify-content-around">
+                        <li><a href="{% url 'mainapp:catalog' %}">Каталог</a></li>
+                        <li><a href="#">Услуги</a></li>
+                    </ul>
+                </div>
+                <div class="d-flex flex-column ml50 fl">
+                    <div class="text_w title_text" style="margin-left: 20px;">Компания</div>
+                    <hr size="10px" width="40px" color="#E96300" style="margin-left: 20px;">
+                    <ul>
+                        <li><a href="#" class="">О нас</a></li>
+                        <li><a href="#" class="">Новости</a></li>
+                        <li><a href="#" class="">Отзывы</a></li>
+                        <li><a href="{% url 'mainapp:portfolio' %}" class="">Портфолио</a></li>
+                    </ul>
+                </div>
+                <div class="d-flex flex-column ml50">
+                    <div class="text_w title_text" style="margin-left: 20px;">Адрес</div>
+                    <hr size="10px" width="40px" color="#E96300" style="margin-left: 20px;">
+                    <p class="text_w" style="margin-left: 20px;">620137, г.Екатеринбург,<br>
+                        ул.Вилонова, д.45Е, офис 407</p>
+                </div>
+                <div class=""></div>
+            </div>
+            <div class="line_div" style="margin-top: 60px;"></div>
+            
+            <div class="text_w" style="text-align: center;margin-top: 20px;padding-bottom: 20px;">
+                <span style="color:#ffffff;">© 2005-2023 ООО «УралКИП» Комплексная поставка оборудования КИПиА.<br>
+                    Россия, г. Екатеринбург, тел. </span>
+                    <a href="tel:+73432068510"><span style="color:#ffffff;">(343)206-85-10</span></a>
+                    <a href="mailto:ural-kip@mail.ru"><span style="color:#ffffff;">ural-kip@mail.ru</span></a>
+            </div>
+
+        </div>
+    </div>
+  
+</div>
+<!-- КОНЕЦ Блок Футер -->

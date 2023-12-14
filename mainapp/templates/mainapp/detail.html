@@ -1,0 +1,121 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+{% block content %}
+
+
+    
+        <!-- Блок ЗАГОЛОВОК Название Пункта-->
+        <div class="container" style="margin-top: 600px;">
+            <div class="row">
+                <div class="col bread">
+                    <ul class="breadprumps d-flex flex-row" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+                    <li class="breadprumps-item" id="bx_breadcrumb_0" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                        <a class="breadprumps-item-link" href="/" title="Главная" itemprop="item">Главная</a> &gt;
+                    </li>
+                    <li class="breadprumps-item" id="bx_breadcrumb_1" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">    
+                        <a class="breadprumps-item-link" href="/catalog/" title="Производство" itemprop="item">Производство
+                        </a> &gt;
+                    </li>
+                    <li class="breadprumps-item">Клапан</li></ul>		</div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h1 class="product-title">Клапан</h1>
+                </div>
+            </div>
+        </div>
+            
+        <!-- КОНЕЦ Блок ЗАГОЛОВОК Название Пункта-->
+    <!-- Блок Описание детали -->
+    <div class="container d-flex">
+        <!--Левая колонка-->
+        <div class="col-md-3 l_c" style="background: #E96300;color: white;">
+            <h2 style="margin-top: 20px;">Каталог</h2>
+            <ul class="list-group">
+                <li class="list-group-item activ"> <a href="#">Стенды датчиков</a> </li>
+                <li class="list-group-item"> <a href="#">Низковольтные комплектные устройства</a> </li>
+                <li class="list-group-item"> <a href="#">Металлорукава оцинкованные</a> </li>
+                <li class="list-group-item"> <a href="#">Металлорукава в ПВХ оболочке</a> </li>
+            </ul>
+        </div>
+        <!--КОНЕЦ Левая колонка-->
+        <!--Карточки товаров-->
+        <div class="row ml50 detail-card">
+            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                <div class="box-img" style="">
+                    <a href="#" data-size="800x800" data-med="" data-med-size="800x800" class="gallery__img--main">
+                        <img class="img-product-detail" src="{% static 'img/atchik_stands/klapan-2.jpg' %}" alt="Клапан 108.321.11-82 ">
+                            <figure class="photo-title empty-photo-title"></figure>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                <div class="row" style="margin-left: 20px;">
+                    <div class="prev-text col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="col-12 functions px-0">
+                            <div class="row justify-content-center align-items-center">
+                                <div class="col-12 mt-4 har">
+                                    <div class="">
+                                        Краткое описание
+                                    </div>
+                                    <h4 class="feature">Краткие характеристики:</h4>
+                                    <ul class="feature-items">	
+                                        <li class="feature-items-item"><img class="feature-items-item-img" src="{% static 'img/info.jpg' %}" alt="">&nbsp;Марка стали - 15ГС</li>
+                                        <li class="feature-items-item"><img class="feature-items-item-img" src="{% static 'img/info.jpg' %}" alt="">&nbsp;Условный проход - 200</li>
+                                        <li class="feature-items-item"><img class="feature-items-item-img" src="{% static 'img/info.jpg' %}" alt="">&nbsp;Радиус гиба - 60</li>
+                                    </ul>
+                                    <div class="" style="margin: 50px 0 0 50px;">
+                                        <a class="pc_btn pc_btn_oran" href="#" role="button"
+                                        style="">В корзину</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+        
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <!--Описание детальное-->
+            <div class="detail-text col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin-top: 50px;">
+                <h2>Отводы гнутые ОСТ 108.321.11</h2>
+                <div class="row gallery"> 
+                    <a class="gallery-item col-lg-6 col-md-6 col-sm-6 col-xs-12" href="/upload/resize_cache/webp/upload/otvody_ost/otvody_gnutye_ost_polinergo.ru_1.webp"> 
+                        <img class="img-responsive" src="/upload/resize_cache/webp/upload/otvody_ost/otvody_gnutye_ost_polinergo.ru_1.webp" alt="отводы гнутые ост" title="отводы гнутые ост" height="400" width="400"> 
+                    </a> 
+                    <a class="gallery-item col-lg-6 col-md-6 col-sm-6 col-xs-12" href="/upload/resize_cache/webp/upload/otvody_ost/otvody_gnutye_ost_polinergo.ru_2.webp"> 
+                        <img class="img-responsive" src="/upload/resize_cache/webp/upload/otvody_ost/otvody_gnutye_ost_polinergo.ru_2.webp" alt="отвод ост 108.321" title="отвод ост 108.321" height="400" width="400"> 
+                    </a> 
+                </div>
+                <p>Гнутые отводы ОСТ 108.321.11 применяются в Москве для сборки трубопроводов ТЭС, перемещающих пар и горячую воду. Фитинги предназначены для температуры +280°С, давления 37,2 МПа. Фасонные изделия изготавливаются из бесшовных труб марки стали 15ГС. Отводы гнутые номинального диаметра 10 – 350 мм имеют угол изгиба 30°, 60°, 90°, 15°, 45°, радиус изгиба 4,5Dн – 6,2Dн, прямые участки одинаковой или разной длины 100 – 2100 мм.</p>
+                <h2>Требования ОСТ 108.321.11</h2>
+                <p>Группа стандартов ГОСТ 108.321 – ГОСТ 108.742 разработана в 1982 году. В нее входят сборочные единицы, детали из кремнемарганцовистой стали для трубопроводов энергетической промышленности. Внутри этой серии ОСТ 108.321.11 регламентирует производство гнутых отводов с характеристиками</p>
+                <ul> 
+                    <li>номинальный диаметр фитингов – DN 10 – 350 мм;</li>
+                    <li>конструкционный материал фасонной детали – сталь 15ГС;</li>
+                    <li>назначение – для рабочих сред внутри паропроводов и линий ГВС;</li>
+                    <li>номинальное давление – PN 37,2 МПа;</li>
+                    <li>температура среды – максимум +280°С;</li>
+                    <li>технология изготовления – гнутье после нагрева зоны деформации;</li>
+                    <li>радиус изгиба – 4,5 – 6,25Dн, фиксированный для каждого типоразмера;</li>
+                    <li>угол изгиба – 15°, 45°, 30°, 60°, 90° стандарт, любое значение в пределах 15 – 90 градусов, кратное 5° по требованию заказчика;</li>
+                    <li>присоединение к трубопроводу – под приварку;</li>
+                    <li>варианты исполнения – 01 – 40, 1 – 5, по пять для каждого типоразмера по количеству углов изгиба.</li>
+                </ul> 
+                <p>Изготавливаются отводы ОСТ 108.321.11 из толстостенной трубы горячекатаной бесшовной, специально предназначенной для горячих котлов.</p>
+            </div>
+        
+            <div class="clearfix"></div>
+        </div>
+        <!--КОНЕЦ Карточки товаров-->
+    </div>
+    <!-- КОНЕЦ Блок Каталог -->
+   
+
+    {% block help %}
+    {% include 'includes/inc_help.html' %}
+    {% endblock %}
+
+
+    {% endblock %}

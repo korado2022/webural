@@ -1,0 +1,14 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 14.6663H40" stroke="#496C77" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M24 14.6663H40" stroke="#276771" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M48 24.0003H16" stroke="#496C77" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M48 24.0003H16" stroke="#276771" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16 38.6663H24" stroke="#496C77" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16 38.6663H24" stroke="#276771" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M45.6568 34.3431C48.781 37.4673 48.781 42.5327 45.6568 45.6568C42.5326 48.781 37.4673 48.781 34.3431 45.6568C31.2189 42.5327 31.2189 37.4673 34.3431 34.3431C37.4673 31.219 42.5326 31.219 45.6568 34.3431" stroke="#496C77" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M45.6568 34.3431C48.781 37.4673 48.781 42.5327 45.6568 45.6568C42.5326 48.781 37.4673 48.781 34.3431 45.6568C31.2189 42.5327 31.2189 37.4673 34.3431 34.3431C37.4673 31.219 42.5326 31.219 45.6568 34.3431" stroke="#276771" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M45.3334 45.9229V58.6669L40 56.0002L34.6667 58.6669V45.9229" stroke="#496C77" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M45.3334 45.9229V58.6669L40 56.0002L34.6667 58.6669V45.9229" stroke="#276771" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M45.3333 50.6663H53.3333C56.28 50.6663 58.6666 48.2797 58.6666 45.333V10.6663C58.6666 7.71967 56.28 5.33301 53.3333 5.33301H10.6666C7.71998 5.33301 5.33331 7.71967 5.33331 10.6663V45.333C5.33331 48.2797 7.71998 50.6663 10.6666 50.6663H34.6666" stroke="#496C77" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M45.3333 50.6663H53.3333C56.28 50.6663 58.6666 48.2797 58.6666 45.333V10.6663C58.6666 7.71967 56.28 5.33301 53.3333 5.33301H10.6666C7.71998 5.33301 5.33331 7.71967 5.33331 10.6663V45.333C5.33331 48.2797 7.71998 50.6663 10.6666 50.6663H34.6666" stroke="#276771" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
