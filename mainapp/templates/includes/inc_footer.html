@@ -14,31 +14,36 @@
                     
                 </div>
                 <div class="block-vert-line" style="margin-left: 140px;"></div>
-                <div class="d-flex flex-column ml50 fl">
-                    <div class="text_w title_text" style="margin-left: 20px;">Продукция</div>
-                    <hr size="10px" width="40px" color="#E96300" style="margin-left: 20px;">
-                    <ul class="d-flex flex-column justify-content-around">
-                        <li><a href="{% url 'mainapp:catalog' %}">Каталог</a></li>
-                        <li><a href="#">Услуги</a></li>
-                    </ul>
+                <div class="d-flex flex-row" style="margin-top: 50px">
+                    <div class="d-flex flex-column ml50 fl">
+                        <div class="text_w title_text" style="margin-left: 20px;">Продукция</div>
+                        <hr size="10px" width="40px" color="#E96300" style="margin-left: 20px;">
+                        <ul class="d-flex flex-column justify-content-around">
+                            <li><a href="{% url 'mainapp:catalog' %}">Каталог</a></li>
+                            <li><a href="{% url 'mainapp:index' %}#services_my">Услуги</a></li>
+                        </ul>
+                    </div>
+                    <div class="d-flex flex-column ml50 fl">
+                        <div class="text_w title_text" style="margin-left: 20px;">Компания</div>
+                        <hr size="10px" width="40px" color="#E96300" style="margin-left: 20px;">
+                        <ul>
+                            <li><a href="{% url 'mainapp:index' %}#about_my" class="">О нас</a></li>
+                            
+                            <li><a href="{% url 'mainapp:index' %}#reviews_other" class="">Отзывы</a></li>
+                            <li><a href="{% url 'mainapp:portfolio' %}" class="">Портфолио</a></li>
+                            <li><a href="{% url 'mainapp:contacts' %}" class="">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="d-flex flex-column ml50">
+                        <div class="text_w title_text" style="margin-left: 20px;">Адрес</div>
+                        <hr size="10px" width="40px" color="#E96300" style="margin-left: 20px;">
+                        <p class="text_w" style="margin-left: 20px;">620137, г.Екатеринбург,<br>
+                            ул.Вилонова, д.45Е, офис 407</p>
+                    </div>
+                    
                 </div>
-                <div class="d-flex flex-column ml50 fl">
-                    <div class="text_w title_text" style="margin-left: 20px;">Компания</div>
-                    <hr size="10px" width="40px" color="#E96300" style="margin-left: 20px;">
-                    <ul>
-                        <li><a href="#" class="">О нас</a></li>
-                        <li><a href="#" class="">Новости</a></li>
-                        <li><a href="#" class="">Отзывы</a></li>
-                        <li><a href="{% url 'mainapp:portfolio' %}" class="">Портфолио</a></li>
-                    </ul>
-                </div>
-                <div class="d-flex flex-column ml50">
-                    <div class="text_w title_text" style="margin-left: 20px;">Адрес</div>
-                    <hr size="10px" width="40px" color="#E96300" style="margin-left: 20px;">
-                    <p class="text_w" style="margin-left: 20px;">620137, г.Екатеринбург,<br>
-                        ул.Вилонова, д.45Е, офис 407</p>
-                </div>
-                <div class=""></div>
+
+                
             </div>
             <div class="line_div" style="margin-top: 60px;"></div>
             
