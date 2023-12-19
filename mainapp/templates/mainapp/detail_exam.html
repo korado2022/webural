@@ -2,7 +2,6 @@
 {% load static %}
 {% block content %}
 
-
     
         <!-- Блок ЗАГОЛОВОК Название Пункта-->
         <div class="container">
@@ -41,55 +40,54 @@
         </div>
         <!--КОНЕЦ Левая колонка-->
         <!--Карточки товаров-->
-        <div class="row detail-card">
-            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
-                <div class="box-img">
-                    <img class="img-product-detail" src="{% static 'img/product/catalog/01-bobyshka/bobyshka_bp01_shema.png' %}" 
-                    alt="Бобышка БП01">
-                    
-                </div>
+        <div class="col-md-9 detail-card">
+            
+            <div class="box-img">
+                <img class="img-product-detail" src="{% static 'img/product/catalog/01-bobyshka/bobyshka_bp01_shema.png' %}" 
+                alt="Бобышка БП01">
+                
             </div>
-            <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
-                <div class="row" style="margin-left: 20px;">
-                    <div class="prev-text col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <div class="col-12 functions px-0">
-                            <div class="row justify-content-center align-items-center">
-                                <div class="col-12 mt-4 har">
-                                    <div class="">
-                                        Краткое описание
-                                    </div>
-                                    <h4 class="feature">Краткие характеристики:</h4>
-                                    <ul class="feature-items">	
-                                        <li class="feature-items-item"><img class="feature-items-item-img" src="{% static 'img/info.jpg' %}" alt="">&nbsp;Марка стали - 15ГС</li>
-                                        <li class="feature-items-item"><img class="feature-items-item-img" src="{% static 'img/info.jpg' %}" alt="">&nbsp;Условный проход - 200</li>
-                                        <li class="feature-items-item"><img class="feature-items-item-img" src="{% static 'img/info.jpg' %}" alt="">&nbsp;Радиус гиба - 60</li>
-                                    </ul>
-                                    <div class="" style="margin: 50px 0 0 50px;">
-                                        <a class="pc_btn pc_btn_oran" href="#" role="button"
-                                        style="">В корзину</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
+           
         
-                    </div>
-                </div>
-            </div>
-            <div class="clearfix"></div>
+            
             <!--Описание детальное-->
-            <div class="detail-text col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin-top: 50px;">
-                <h2>Бобышка БП01</h2>
-                <div class="row gallery"> 
-                    <img class="img-responsive" src="{% static 'img/product/catalog/01-bobyshka/bobyshka_bp01_tab.png' %}" 
-                        alt="отводы гнутые ост" title="Бобышка БП01"> 
-                    
-                    
+            <div class="detail-card-ttx">
+                <div class="tab">
+                    <button class="tablinks active" id="defaultOpen" 
+                        onclick="openCity(event, 'Paris')" 
+                        style="border-radius: 5px 5px 0 0;">Условное обозначение</button>
+                              
+                    <button class="tablinks" onclick="openCity(event, 'Tokyo')" style="border-radius: 5px 5px 0 0;">Марка материала</button>
                 </div>
-                <p></p>
+                
+                <div class="tabcontent" id="Paris" style="display: block;">БП01-М20х1,5-100-С&nbsp; &nbsp;ТУ1462-001-25541174-2016
+                    <p><em>Расшифровка условного обозначения бобышки БП01:</em><br>
+                        БП01 - бобышка прямая тип 01;<br>
+                        М20х1,5 - резьба;<br>
+                        100 - длинна;<br>
+                        С - марка материала;</p>
+                            
+                        <p style="text-align: center;"><strong>ТУ1462-001-25541174-2016 - ТУ ООО"Металлообрабатывающая Компания- НН; </strong></p>
+                </div>
+                <div class="tabcontent" id="Tokyo" style="border-radius: 0px 5px 0px 0px; display: none;">
+                    Н - нержавеющая сталь (12Х18Н10Т, 08Х18Н10Т, 08Х18Н10 и т.д);<br>
+                    М - сталь с содержанием молибдена (10Х17Н13М2Т, 15Х11МФ, 3ОХМА, 40ХМЮА, 38ХМЮА&nbsp;и т.д);<br>
+                    С - углеродная сталь (Ст20, 09Г2С и т.д.);
+                    <p><b>По согласованию с закачиком, изделия могут быть выполнены из других марок стали.</b></p>
+                                
+                    <p><b>Так же выполняем специальные заказы по чертежам заказчика.</b></p>
+                </div>
+                <div class="" style="margin: 50px 0 0 50px;">
+                    <a class="pc_btn pc_btn_oran" href="#" role="button"
+                    style="">В корзину</a>
+                </div>
             </div>
+                
+            <!--Описание детальное-->
+            
         
             <div class="clearfix"></div>
+            <p></p>
         </div>
         <!--КОНЕЦ Карточки товаров-->
     </div>

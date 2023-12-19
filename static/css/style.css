@@ -409,7 +409,7 @@ body {
 .img-product-detail {
     width: 391px;
     height: 391px;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .bread > ul li {
@@ -439,15 +439,24 @@ body {
 }
 
 .box-img {
-    margin: 10px;
+    width: 391px;
+    height: 391px;
+    margin: 20px;
+    border-radius: 20px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
 .detail-card {
+    display: flex;
+    flex-direction: row;
     margin-left: 50px;
     border-radius: 10px;
     background: #ffffff;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.detail-card-ttx {
+    margin: 20px;
 }
 
 .left {
@@ -802,6 +811,46 @@ body {
     margin-left: 20px;
 }
 /* Stop Block footer*/
+/* Стили для вкладок */
+.tab {
+    width: auto;
+    overflow: hidden;
+    border-left: 1px solid rgb(232, 232, 232) ;
+    border-bottom: 1px solid white;
+    background-color: rgb(232, 232, 232);
+    border-radius: 5px  5px 0 0 ;
+}
+
+.tab button {
+    background-color: #E96300;
+    float: left;
+    border-left: 1px solid #ccc;
+    outline: none;
+    cursor: pointer;
+    padding: 7px 16px;
+    transition: 0.3s;
+    color: white;
+    font-weight: 700;
+}
+
+.tab button:hover {
+    background-color: #ddd;
+}
+
+.tab button.active {
+    background-color: white;
+    color: black;
+}
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+    background-color: white;
+}
+/* Стили для вкладок */
+
 /* Медиа */
 
 /* малый комп или горизонт планшет */
@@ -830,6 +879,11 @@ body {
     }
     .prem-main-card {
         margin-left: 30px;
+    }
+    .detail-card {
+        flex-direction: column;
+        margin-left: 10px;
+        margin-top: 20px;
     }
   
 }
@@ -867,7 +921,14 @@ body {
     .about_bott {
         margin-bottom: 500px;
     }
-    
+    .prem-main-card {
+        margin-left: 30px;
+    }
+    .detail-card {
+        flex-direction: column;
+        margin-left: 10px;
+        margin-top: 20px;
+    }
         
 }
 
@@ -881,7 +942,10 @@ body {
         display: flex;
         flex-direction: column;
     }
-   
+    .catalog_block {
+        display: flex;
+        flex-direction: column;
+    }
     .nav-med {
       display: block;
     }
@@ -918,12 +982,28 @@ body {
         height: 300px;
         margin-left: 30px;
     }
+    .prem-main-card {
+        width: 320px;
+        margin-left: 10px;
+    }
+    .prem-main__item {
+        width: 300px;
+    }
+    .detail-card {
+        flex-direction: column;
+        margin-left: 10px;
+        margin-top: 20px;
+    }
 }
     
 /* вертикальный телефон */
 @media (max-width: 575px) {
     .container {
         width: 100%
+    }
+    .catalog_block {
+        display: flex;
+        flex-direction: column;
     }
     .collapse:not(.show) {
         display: flex;
@@ -977,7 +1057,13 @@ body {
         font-size: 2rem;
     }
     .catalog_block {
-        display: block;
+        display: flex;
+        flex-direction: column;
+    }
+    .box-img {
+        width: 200px;
+        height: 200px;
+        border-radius: 10px;
     }
     .img-product-detail {
         width: 200px;
@@ -985,11 +1071,12 @@ body {
         border-radius: 10px;
     }
     .detail-card {
+        flex-direction: column;
         margin-left: 10px;
         margin-top: 20px;
     }
     .prem-main-card {
-        width: 360px;
+        width: 320px;
         margin-left: 10px;
     }
     .prem-main__item {
