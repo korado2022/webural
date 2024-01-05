@@ -24,3 +24,14 @@ function openCity(evt, cityName) {
     
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
+
+const list = [document.getElementsByClassName("nav-item")];
+let selectedEl;
+
+for (const el of list) {
+  el.addEventListener("click", e => {
+    selectedEl && selectedEl.classList.remove("active");
+    selectedEl = e.target;
+    e.target.classList.add("active");
+  });
+}
