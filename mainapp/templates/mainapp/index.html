@@ -2,64 +2,137 @@
 {% load static %}
 {% block content %}
 
-    
+    <!-- Блок advantages-->
+    <div class="container">
+        <div class="features">
+      <div class="feature__item">
+        <div class="feature__img">
+          <img class="icon-custom" src="{% static 'img/longevity.svg' %}" alt="Мы 150 лет на рынке">
+        </div>
+        <div class="feature__text">Мы 150 лет на рынке</div>
+      </div>
+      <div class="feature__item">
+        <div class="feature__img">
+          <img class="icon-custom" src="{% static 'img/quality.svg' %}" alt="Надежный партнер Вашего бизнеса">
+        </div>
+        <div class="feature__text">Надежный партнер<br>Вашего бизнеса</div>
+      </div>
+      <div class="feature__item">
+        <div class="feature__img">
+          <img class="icon-custom" src="{% static 'img/envelope_send.svg' %}" alt="Есть вопросы? Нужна консультация? Напишите нам">
+        </div>
+        <div class="feature__text"><a href="#formHelp" 
+            class="file_a">Есть вопросы?<br>Нужна консультация?<br>Напишите нам</a></div>
+      </div>
+    </div></div>
+    <!-- КОНЕЦ Блок advantages-->
     <!-- Блок О компании -->
     <div class="container" id="about_my">
         <h1 class="p-2 text_w ">О НАС</h1>
-            <p class="p-2 text_w ">Мы занимаемся комплектацией и поставкой средств автоматизации (КИПиА, деталей 
+            <p class="p-2 text_w title_text">Мы занимаемся комплектацией и поставкой средств автоматизации (КИПиА, деталей 
                 трубопроводов, средств измерений, материалов) для технического перевооружения и модернизации 
                 систем контроля и управления объектов энергетики и нефте-газовой сферы. Производим комплектацию 
                 как для комплексных договоров под “ключ” так и по отдельным договорам поставки.
                 Поставляем как собственную продукцию так и изделия компаний-партнёров: НКУ, шкафы и пульты управления, 
-                шкафы контроллеров, сборки РТЗО, стенды датчиков.
-                .</p>
-        <div class="card flex-wrap" style="background: #E96300;color: white;">
-            <div class="d-flex flex-wrap about_block">
-               
-               
-                     <!--Левая колонка-->
-                    <div class="col">
-                        <div class="d-flex flex-column about_left">
-
-                            
-                            
-                            <hr size=3px width=400px align="center">
-                            <div class="d-flex flex-row justify-content-center">
-                                <div class="card_ab">
-                                    <div class="d-flex flex-row justify-content-around mt20">
-                                        <img src="{% static 'img/star_12.png' %}" width="28px" height="28px">
-                                        <p class="about_p">19 лет</p>
-                                    </div>
-                                    <p style="color: black;margin-left: 40%;font-weight: 800;">На рынке</p>
-                                    
-                                </div>
-                                <div class="block-vert-line"></div>
-                                <div class="card_ab">
-                                    <div class="d-flex flex-row justify-content-around mt20">
-                                        <img src="{% static 'img/Vector.png' %}" width="28px" height="28px">
-                                        <p class="about_p">100+</p>
-                                    </div>
-                                    <p style="color: black;font-weight:800;margin-left: 10%; font-size: 0.7rem;">
-                                        объектов, введенных в эксплуатацию</p>
-                                    
-                                </div>
-                            </div>
-                            
-                            <hr size="3px" width="400px" align="center">
-                        </div>
-                    </div>
-                    <!--КОНЕЦ Левая колонка-->
-                   
-               
-            </div>
-        </div>
+                шкафы контроллеров, сборки РТЗО, стенды датчиков.</p>
+        
         <p style="padding-bottom: 100px"></p>
     </div>
     <!-- КОНЕЦ Блок О компании -->
 
 
+    <!-- Блок Услуги -->
+    <div class="container" style="margin-top: 50px;" id="services_my">
+         <!---->
+        <div class="d-flex justify-content-start">
+                <h2 class="elem">Мы предлагаем</h2>
+            </div>
+            
+        <!---->
+        <div class="prem-main">
+
+            
+            <div class="col-lg-4 prem-main-card">
+                <a href="{% url 'mainapp:elektromontazhnye-raboty' %}" class="prem-main-a">
+                    <div class="prem-main__item">
+                        <div class="prem-main__img">
+                            <img src="{% static 'img/prem-main-3.svg' %}" alt="Производство электромонтажных работ">
+                        </div>
+                        <div class="services-main__title">Изготовление трубопроводной арматуры для КИПиА</div>
+
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-lg-4 prem-main-card">
+                <a href="{% url 'mainapp:puskonaladochnye-raboty' %}" class="prem-main-a">
+                    <div class="prem-main__item">
+                        <div class="prem-main__img">
+                            <img src="{% static 'img/pipe_2.svg' %}" alt="Производство пусконаладочных работ" style="width: 60px; height: 60px;">
+                        </div>
+                        <div class="services-main__title">Запорные, регулирующие клапаны. Игольчатые, 
+                            сальниковые вентили, шаровые краны, стальные фланцы и др. </div>
+
+                    </div>
+                </a>
+            </div>
+
+            
+            <div class="col-lg-4 prem-main-card">
+                <a href="{% url 'mainapp:proektirovanie-kip' %}" class="prem-main-a">
+                    <div class="prem-main__item">
+                        <div class="prem-main__img">
+                            <img src="{% static 'img/pipe.svg' %}" alt="Проектирование КИП и А" style="width: 60px; height: 60px;">
+                        </div>
+                        <div class="services-main__title">Изготовление стендов датчиков КИПиА</div>
+
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-lg-4 prem-main-card">
+                <a href="{% url 'mainapp:proektirovanie-kip' %}" class="prem-main-a">
+                    <div class="prem-main__item">
+                        <div class="prem-main__img">
+                            <img src="{% static 'img/prem-main-3.svg' %}" alt="Проектирование КИП и А">
+                        </div>
+                        <div class="services-main__title">Осуществление поставки контрольно-измерительных 
+                            приборов и средств автоматизации</div>
+
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-lg-4 prem-main-card">
+                <a href="{% url 'mainapp:proektirovanie-kip' %}" class="prem-main-a">
+                    <div class="prem-main__item">
+                        <div class="prem-main__img">
+                            <img src="{% static 'img/prem-main-3.svg' %}" alt="Проектирование КИП и А">
+                        </div>
+                        <div class="services-main__title">Труба для монтажа КИПиА и её крепёжные элемены</div>
+
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-lg-4 prem-main-card">
+                <a href="{% url 'mainapp:proektirovanie-kip' %}" class="prem-main-a">
+                    <div class="prem-main__item">
+                        <div class="prem-main__img">
+                            <img src="{% static 'img/prem-main-3.svg' %}" alt="Проектирование КИП и А">
+                        </div>
+                        <div class="services-main__title">Эл. Шкафы и шкафы систем автоматизации КИПиА</div>
+
+                    </div>
+                </a>
+            </div>
+
+            
+        </div>
+    </div>
+    <!-- КОНЕЦ Блок Услуги -->
     <!-- Блок Категории продукции -->
-    <div class="container flex-wrap">
+    <div class="container flex-wrap" style="margin-top: 100px;">
 
         <div class="d-flex flex-column">
             <!---->
@@ -67,11 +140,7 @@
                 <div class="d-flex justify-content-center">
                     <h2 class="elem">ПРОДУКЦИЯ</h2>
                 </div>
-                <div class="d-flex justify-content-center">
-                    <p class="title_text" style="text-align: center;">
-                        Предприятие специализируется <br>
-                        на производстве и комплексной поставке</p>
-                </div>
+                
             </div>
             <!---->
             
@@ -79,9 +148,9 @@
             <div class="d-flex flex-wrap flex-row justify-content-around">
                 <!---->
                 <div  class="mt20">
-                    <a class="kat" href="#" style="text-decoration: none;">
-                        <h3 class="kat_title"> 
-                            Типовых и нестандартных изделий для сферы энергетики и других отраслей</h3>
+                    <a class="kat" href="{% url 'mainapp:catalog-new' %}" style="text-decoration: none;">
+                        <h5 class="kat_title"> 
+                            Типовые и нестандартные изделия трубопроводов КИПиА</h5>
                         <img class="kat_img" src="{% static 'img/product_image.jpg' %}" alt="image">
                     </a>
                 </div>
@@ -89,7 +158,39 @@
                 <!---->
                 <div class="mt20">
                     <a class="kat" href="#" style="text-decoration: none;">
-                        <h3 class="kat_title">Приборов измерения, контроля давления и температуры</h3>
+                        <h5 class="kat_title">Запорная арматура</h5>
+                        <img class="kat_img" src="{% static 'img/product_image_2.jpg' %}" alt="КИПиА">
+                    </a>
+                </div>
+                <!---->
+                 <!---->
+                 <div class="mt20">
+                    <a class="kat" href="#" style="text-decoration: none;">
+                        <h5 class="kat_title">Стенды датчиков КИПиА</h5>
+                        <img class="kat_img" src="{% static 'img/product_image_2.jpg' %}" alt="КИПиА">
+                    </a>
+                </div>
+                <!---->
+                 <!---->
+                 <div class="mt20">
+                    <a class="kat" href="#" style="text-decoration: none;">
+                        <h5 class="kat_title">Приборы для КИПиА </h5>
+                        <img class="kat_img" src="{% static 'img/product_image_2.jpg' %}" alt="КИПиА">
+                    </a>
+                </div>
+                <!---->
+                 <!---->
+                 <div class="mt20">
+                    <a class="kat" href="#" style="text-decoration: none;">
+                        <h5 class="kat_title">Трубы для КИПиА</h5>
+                        <img class="kat_img" src="{% static 'img/product_image_2.jpg' %}" alt="КИПиА">
+                    </a>
+                </div>
+                <!---->
+                 <!---->
+                 <div class="mt20">
+                    <a class="kat" href="#" style="text-decoration: none;">
+                        <h5 class="kat_title">Электро техническая продукция </h5>
                         <img class="kat_img" src="{% static 'img/product_image_2.jpg' %}" alt="КИПиА">
                     </a>
                 </div>
@@ -102,169 +203,6 @@
     <!-- КОНЕЦ Блок Категории продукции -->
 
 
-    <!-- Блок Услуги -->
-    <div class="container" style="margin-top: 100px;" id="services_my">
-         <!---->
-        <div class="d-flex justify-content-start">
-                <h2 class="elem">УСЛУГИ</h2>
-            </div>
-            <div class="d-flex justify-content-start">
-                <p class="title_text">
-                    Коллектив предприятия имеет опыт в сфере</p>
-            </div>
-        <!---->
-		<div class="prem-main">
-
-            
-			<div class="col-lg-4 prem-main-card">
-                <a href="{% url 'mainapp:elektromontazhnye-raboty' %}" class="prem-main-a">
-                    <div class="prem-main__item">
-                        <div class="prem-main__img">
-                            <img src="{% static 'img/prem-main-2.svg' %}" alt="Производство электромонтажных работ">
-                        </div>
-                        <div class="services-main__title">производства электромонтажных работ</div>
-
-                    </div>
-                </a>
-			</div>
-
-			<div class="col-lg-4 prem-main-card">
-                <a href="{% url 'mainapp:puskonaladochnye-raboty' %}" class="prem-main-a">
-                    <div class="prem-main__item">
-                        <div class="prem-main__img">
-                            <img src="{% static 'img/prem-main-3.svg' %}" alt="Производство пусконаладочных работ">
-                        </div>
-                        <div class="services-main__title">производства пусконаладочных работ</div>
-
-                    </div>
-                </a>
-			</div>
-
-            
-            <div class="col-lg-4 prem-main-card">
-                <a href="{% url 'mainapp:proektirovanie-kip' %}" class="prem-main-a">
-                    <div class="prem-main__item">
-                        <div class="prem-main__img">
-                            <img src="{% static 'img/prem-main-3.svg' %}" alt="Проектирование КИП и А">
-                        </div>
-                        <div class="services-main__title">проектирование КИП и А</div>
-
-                    </div>
-                </a>
-			</div>
-
-            
-		</div>
-    </div>
-    <!-- КОНЕЦ Блок Услуги -->
-
-
-
-   
-    
-    <!-- Блок Блок Паартнеры -->
-    <div class="container" style="margin-top: 140px;">
-        <div class="d-flex flex-column">
-            <div class="">
-                <div class="d-flex justify-content-start">
-                    <h2 class="elem">ПАРТНЕРЫ</h2>
-                </div>
-                <div class="d-flex justify-content-start">
-                    <p class="title_text">
-                        За 10 лет работы компания зарекомендовала себя как <br>
-                        надежный партнер. Продукция поставляется по всей территории России.<br>
-                        Наша продукция используется организациями</p>
-                </div>
-            </div>
-            <div class="mark" style="margin-top: 20px;">
-                <div class="marquee">
-                    <ul class="marquee-content">
-                        <li><i class="fab"><img class="partner sh_1" src="{% static 'img/partner/Bashneft.svg' %}" alt="БашНефть"></i></li>
-                        <li><i class="fab"><img class="partner sh_1" src="{% static 'img/partner/Gazprom.svg' %}" alt="ГазПром"></i></li>
-                        <li><i class="fab"><img class="partner sh_1" src="{% static 'img/partner/Lukoil.svg' %}" alt="ЛукОил"></i></li>
-                        <li><i class="fab"><img class="partner sh_1" src="{% static 'img/partner/Rosneft.svg' %}" alt="РосНефть"></i></li>
-                        <li><i class="fab"><img class="partner sh_1" src="{% static 'img/partner/Tatneft.svg' %}" alt="ТатНефть"></i></li>
-                        <li><i class="fab"><img class="partner sh_1" src="{% static 'img/partner/Transneft.svg' %}" alt="ТрансНефть"></i></li>
-                    </ul>
-                    </div>
-            </div>
-        </div>
-    </div>
-    <!-- КОНЕЦ Блок Паартнеры -->
-
-    <!-- Блок Отзывы клиентов -->
-    <div class="container" style="margin-top: 140px;" id="reviews_other">
-        <div class="d-flex flex-column">
-            <div class="d-flex justify-content-center">
-                <h2 class="elem">ОТЗЫВЫ КЛИЕНТОВ</h2>
-            </div>
-            <div class="d-flex flex-wrap justify-content-around">
-                <div class="reviews d-flex">
-                    <div class="">
-                        <img class="" src="{% static 'img/Mask.jpg' %}" alt="photo" 
-                        style="width: 70px;height: 70px;margin-right: 40px;margin-top: 30px;border-radius: 35px;">
-                    </div>
-                    <div class="d-flex flex-column justify-content-around">
-                        <div class="">
-                            <p class="text_w">Extremely easy to use, helped us develop our 
-                            Vote for George Washington micro-site extre- mely 
-                            quickly! We will definitely use it again for other 
-                            projects</p>
-                        </div>
-                        <div class=""><p class="text_w">Microsoft</p></div>
-                    </div>
-                </div>
-                <div class="reviews d-flex">
-                    <div class="">
-                        <img class="" src="{% static 'img/Mask.jpg' %}" alt="photo" 
-                        style="width: 70px;height: 70px;margin-right: 40px;margin-top: 30px;border-radius: 35px;">
-                    </div>
-                    <div class="d-flex flex-column justify-content-around">
-                        <div class="">
-                            <p class="text_w">Extremely easy to use, helped us develop our 
-                            Vote for George Washington micro-site extre- mely 
-                            quickly! We will definitely use it again for other 
-                            projects</p>
-                        </div>
-                        <div class=""><p class="text_w">Microsoft</p></div>
-                    </div>
-                </div>
-                <div class="reviews d-flex">
-                    <div class="">
-                        <img class="" src="{% static 'img/Mask.jpg' %}" alt="photo" 
-                        style="width: 70px;height: 70px;margin-right: 40px;margin-top: 30px;border-radius: 35px;">
-                    </div>
-                    <div class="d-flex flex-column justify-content-around">
-                        <div class="">
-                            <p class="text_w">Extremely easy to use, helped us develop our 
-                            Vote for George Washington micro-site extre- mely 
-                            quickly! We will definitely use it again for other 
-                            projects</p>
-                        </div>
-                        <div class=""><p class="text_w">Microsoft</p></div>
-                    </div>
-                </div>
-                <div class="reviews d-flex">
-                    <div class="">
-                        <img class="" src="{% static 'img/Mask.jpg' %}" alt="photo" 
-                        style="width: 70px;height: 70px;margin-right: 40px;margin-top: 30px;border-radius: 35px;">
-                    </div>
-                    <div class="d-flex flex-column justify-content-around">
-                        <div class="">
-                            <p class="text_w">Extremely easy to use, helped us develop our 
-                            Vote for George Washington micro-site extre- mely 
-                            quickly! We will definitely use it again for other 
-                            projects</p>
-                        </div>
-                        <div class=""><p class="text_w">Microsoft</p></div>
-                    </div>
-                </div>
-                
-            </div>
-            
-        </div>
-    </div>
-    <!-- КОНЕЦ Блок Отзывы клиентов -->
     
     {% block help %}
     {% include 'includes/inc_help.html' %}
