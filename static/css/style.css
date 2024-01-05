@@ -81,7 +81,10 @@ body {
 }
 
 .mar-bot {
-    padding-bottom: calc(30vh - (600px - 100vh));
+    padding-bottom: calc(50px + 30vw);
+}
+.baner {
+    height: 266px;
 }
 
 .tel {
@@ -269,9 +272,10 @@ body {
     color: #E96300;
 }
 
+/* Блок Продукция */
 .kat {
-    width: 570px;
-    height: 300px;
+    width: 400px;
+    height: 280px;
     border-radius: 10px;
     display: flex;
     justify-content: space-around;
@@ -293,6 +297,7 @@ body {
 .kat_title {
     margin-left: 20px;
 }
+/* Конец Блок Продукция*/
 
 .reviews {
     width: 470px;
@@ -389,7 +394,208 @@ body {
 .catalog_block {
     display: flex;
 }
+.image-catalog {
+    width: 100px;
+    height: 100px;
+}
+
+.title_page {
+    color: white;
+    margin-top: 50px;
+}
 /*Stop Catalog block*/
+/* Catalog-New block*/
+.pc_btn2:hover {
+    background-color: #974000;
+    border-color: #974000;
+    color: #009181;
+}
+
+.pc_btn2 {
+    width: auto;
+    border-radius: 25px;
+    padding: 2px 7px;
+    text-decoration: none;
+}
+
+.catalog-new {
+    display: flex;
+    flex-direction: row;
+}
+.items.list {
+    display: block;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    border-radius: 20px;
+}
+.items {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0 0 20px 20px;
+}
+.product-item-list {
+    padding: 28px 3.4% 28px;
+    display: block;
+}
+.product-item-list {
+    height: auto;
+}
+.product-item-list {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-wrap: wrap;
+    /* -webkit-flex-wrap: wrap; */
+    /* flex-wrap: wrap; */
+    width: 100%;
+    /* height: 282px; */
+    margin-bottom: 22px;
+    padding: 28px 3.4% 5px;
+    box-sizing: border-box;
+    position: relative;
+}
+.product-item, .product-item-list, .product {
+    border: 1px solid #f5f5f6;
+    border-radius: 3px;
+    background-color: #fff;
+    box-sizing: border-box;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+}
+.information-desc {
+    width: 75.5%;
+    float: left;
+}
+.tab-product-description {
+    overflow: hidden;
+    width: 100%;
+    padding-top: 30px;
+}
+.tab-product-table-fixed {
+    display: none;
+    position: fixed;
+    top: 55px;
+    background: #FFF;
+    z-index: 5;
+}
+#tab-product-description table, .tab-product-description table {
+    min-width: 100%;
+    position: relative;
+}
+.product-item-list .desc table, #tab-product-description table, .tab-product-description table {
+    width: auto !important;
+    border-collapse: collapse;
+}
+
+table {
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 2px;
+    border-color: gray;
+}
+.tab-product-table-fixed {
+    display: none;
+    position: fixed;
+    top: 55px;
+    background: #FFF;
+    z-index: 5;
+}
+#tab-product-description table, .tab-product-description table {
+    min-width: 100%;
+    position: relative;
+}
+.product-item-list .desc table, #tab-product-description table, .tab-product-description table {
+    width: auto !important;
+    border-collapse: collapse;
+}
+#tab-product-description table thead, .tab-product-description table thead {
+    background: #FFF;
+}
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+.product-item-list .desc table td, #tab-product-description table td, .tab-product-description table td {
+    border: 1px solid #b2b6b9;
+    padding: 5px 10px;
+    vertical-align: middle;
+    font-size: 14px;
+    text-align: left;
+    box-sizing: border-box;
+}
+td {
+    display: table-cell;
+    vertical-align: inherit;
+}
+.product-item-list .image {
+    width: 22%;
+    float: left;
+    margin-right: 2.5%;
+    display: block;
+}
+.product-item-list .information {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 95.5%;
+}
+.product-item-list .information .category {
+    width: 100%;
+    margin-bottom: 5px;
+}
+.product-item .category, .product-item-list .category, .product .category {
+    font-size: 0.75em;
+    color: #7d8387;
+    letter-spacing: 0.01em;
+}
+.product-item-list .information .name {
+    width: 65%;
+    max-height: 48px;
+    overflow: hidden;
+    color: #E96300;
+}
+.product-item-list .information .name {
+    width: auto !important;
+}
+.product-item-list .information .buttons {
+    width: 36.6%;
+    margin: 11px 0 0 auto;
+    text-align: right;
+}
+a.table-link {
+    text-decoration: none;
+    font-weight: bold;
+    color: #424242;
+    min-width: 95px;
+    display: inline-block;
+}
+.product-item-list .desc table td, #tab-product-description table td, .tab-product-description table td {
+    border: 1px solid #b2b6b9;
+    padding: 5px 10px;
+    vertical-align: middle;
+    font-size: 14px;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+/*Stop Catalog-New block*/
 .l_c > ul li a {
     text-decoration: none;
     color: #E96300;
@@ -448,7 +654,6 @@ body {
 
 .detail-card {
     display: flex;
-    flex-direction: row;
     margin-left: 50px;
     border-radius: 10px;
     background: #ffffff;
@@ -457,6 +662,10 @@ body {
 
 .detail-card-ttx {
     margin: 20px;
+}
+
+.detail-card-dir {
+    flex-direction: wrap;
 }
 
 .left {
@@ -478,7 +687,7 @@ body {
     /* margin-top: 20px; */
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
     
 }
@@ -524,7 +733,8 @@ body {
     text-decoration: none;
 }
 
-.prem-main-a:hover {
+.prem-main-a:hover,
+.prem-main-a:focus {
     text-decoration: underline;
     font-weight: bold;
     color: #FFF;
@@ -541,7 +751,7 @@ body {
 
 .prem-main-card {
     margin-top: 20px;
-    height: 280px;
+    height: 260px;
 }
 /* КОНЕЦ Главная Услуги */
 
@@ -851,6 +1061,215 @@ body {
 }
 /* Стили для вкладок */
 
+/* Basket */
+.lock {
+    overflow-y: hidden;
+  }
+
+  .cart {
+    width: 75px;
+    height: 75px;
+    border-radius: 10px;
+    background-color: #364364;
+    -webkit-transition: 0.1s;
+    -o-transition: 0.1s;
+    transition: 0.1s;
+    /* cursor: pointer; */
+    
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -o-object-fit: contain;
+       object-fit: contain;
+    padding: 15px;
+    -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+            box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .cart:hover {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.33); /* Небольшое затемнение на фоне */
+    z-index: 1000; /* Поверх всех окон */
+    width: 100%;
+    height: 100%;
+    display: none; /* По умолчанию скрываем окно */
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    overflow-y: scroll;
+    border-radius: 20px;
+  }
+  
+  /* Стилизация контейнера окна */
+  .popup__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Распределяем элементы внутри равномерно */
+    width: 100%;
+    max-width: 800px;
+    min-height: 300px;
+    background-color: #fff;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    position: relative;
+  }
+  
+  /* Элементы окна (заголовок, список товаров, вывод стоимости) */
+  .popup__item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+  }
+  
+  .popup__item:last-of-type {
+    border-bottom: none;
+  }
+  
+  .popup__title {
+    font-size: 24px;
+  }
+  
+  /* Стили для вывода товара */
+  .popup__product {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .popup__product-wrap {
+    display: flex;
+    align-items: center;
+  }
+  
+  .popup__product-title {
+    max-width: 300px;
+    font-weight: 500;
+  }
+  
+  .popup__product-quantity {
+    font-size: 18px;
+    margin-right: 20px;
+  }
+  
+  /* Стили для кнопки удаления товара */
+  .popup__product-delete {
+    font-size: 12px;
+    padding: 5px;
+    cursor: pointer;
+    color: #d62240;
+  }
+  
+  /* Стили для вывода стоимости товаров */
+  .popup__cost {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 5px;
+  }
+  
+  .popup__cost-title {
+    margin-right: 15px;
+    font-size: 20px;
+    color: #364364;
+    text-align: right;
+  }
+
+  .popup__clear {
+    margin-left: 15px;
+    font-size: 20px;
+    color: #364364;
+    text-align: left;
+  }
+  
+  .popup__cost-value {
+    font-size: 20px;
+  }
+  
+  /* Стили для кнопки закрытия окна */
+  .popup__close {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    padding: 14px;
+    color: rgba(54, 67, 100, 0.7);
+    font-size: 14px;
+  }
+  
+  .popup__close:hover {
+    color: rgb(54, 67, 100);
+  }
+  
+  .popup--open {
+    display: flex;
+  }
+/* stop Basket */
+/*Block advantages*/
+/* .advantages {
+    margin: 3% 0 3.3%;
+} */
+
+.file_a {
+    text-decoration: underline dotted green;
+    color: #FFF;
+
+}
+.file_a:hover,
+.file_a:focus {
+    text-decoration: underline;
+    color: #009181;
+}
+.features {
+    padding: 50px 0 40px;
+    font-size: 0;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.feature__item {
+    display: inline-block;
+    vertical-align: middle;
+    width: calc(100% / 3);
+    color: #FFF;
+}
+.feature__img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 65px;
+    margin-right: 35px;
+}
+
+.icon-custom {
+    width: 65px;
+    height: 65px;
+}
+
+.feature__text {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1.2rem;
+    color: #fff;
+    /* font-weight: 300; */
+    line-height: 1.4;
+    text-align: left;
+}
+/*Stop Block advantages*/
+
+
 /* Медиа */
 
 /* малый комп или горизонт планшет */
@@ -862,15 +1281,11 @@ body {
         display: flex;
         flex-direction: column;
     }
-    .mar-bot {
-        padding-bottom: 50vh;
-    }
+   
     .nav-med {
      display: block;
     }
-    .nav-bar-menu {
  
-    }
     .head-tlf {
         margin-left: 50px;
     }
@@ -893,9 +1308,7 @@ body {
     .container {
         width: 720px
     }
-    .mar-bot {
-        padding-bottom: 30vh;
-    }
+   
     .about_block {
         flex-direction: column;
     }
@@ -909,9 +1322,7 @@ body {
     .nav-med {
         display: block;
     }
-    .baner {
-        margin-top: 110px;
-    } 
+
     .nav-bar-menu {
         margin-top: auto;
     }
@@ -929,6 +1340,9 @@ body {
         margin-left: 10px;
         margin-top: 20px;
     }
+    .kach {
+        margin-top: 100px;
+    }
         
 }
 
@@ -937,7 +1351,6 @@ body {
     .container {
         width: 540px
     }
-    
     .collapse:not(.show) {
         display: flex;
         flex-direction: column;
@@ -949,9 +1362,6 @@ body {
     .nav-med {
       display: block;
     }
-    .baner {
-        margin-top: 120px;
-    } 
     .nav-bar-menu {
         margin-bottom: 30px;
  
@@ -994,6 +1404,15 @@ body {
         margin-left: 10px;
         margin-top: 20px;
     }
+	.advantages .items {
+		flex-wrap: wrap;
+	}
+	.advantages .items .item {
+		margin-top: 50px;
+	}
+    .kach {
+        margin-top: 100px;
+    }
 }
     
 /* вертикальный телефон */
@@ -1001,6 +1420,7 @@ body {
     .container {
         width: 100%
     }
+    
     .catalog_block {
         display: flex;
         flex-direction: column;
@@ -1011,12 +1431,6 @@ body {
     }
     .nav-med {
       display: block;
-    }
-    .baner {
-        margin-top: 210px;
-    } 
-    .nav-bar-menu {
-  
     }
     .head-tlf {
         margin-left: 50px;
@@ -1081,6 +1495,15 @@ body {
     }
     .prem-main__item {
         width: 300px;
+    }
+	.advantages .items {
+		flex-wrap: wrap;
+	}
+	.advantages .items .item {
+		margin-top: 50px;
+	}
+    .kach {
+        margin-top: 100px;
     }
 }
    
