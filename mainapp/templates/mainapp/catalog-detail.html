@@ -1,0 +1,108 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+
+
+{% block title %}{{ title_name }}{% endblock %}
+{% block content %}
+
+
+    <!-- Block search-->
+    <div class="container">
+        <form class="d-flex" role="search" method="GET" action="#">
+          <input class="form-control me-2" name="q" type="search" placeholder="Поиск" aria-label="Поиск">
+          <button class="btn btn-outline-success" type="submit" href="">Поиск</button>
+        </form>
+    </div>
+    <!-- End Block search-->
+    <!-- Блок Каталог -->
+    <div class="container">
+        <h1 class="title_page">Изготовление трубопроводной арматуры для КИПиА</h1>
+    </div>
+   
+    <div class="container catalog_block" style="margin-top: 50px">
+        
+        <!--Левая колонка-->
+        <div class="col-md-3 l_c" style="background: #E96300;color: white;">
+            <h2 style="margin-top: 20px;" id="catalog-product"> Каталог</h2>
+            <ul class="list-group">
+                <li class="list-group-item activ"> <a href="#">Изготовление трубопроводной арматуры для КИПиА</a> </li>
+                <li class="list-group-item"> <a href="#">Запорные, регулирующие клапаны. Игольчатые, сальниковые вентили, шаровые краны, стальные фланцы и др.</a> </li>
+                <li class="list-group-item"> <a href="#">Изготовление стендов датчиков КИПиА</a> </li>
+                <li class="list-group-item"> <a href="#">Осуществление поставки контрольно-измерительных приборов и средств автоматизации</a> </li>
+                <li class="list-group-item"> <a href="#">Труба для монтажа КИПиА и её крепёжные элемены</a> </li>
+                <li class="list-group-item"> <a href="#">Электрические шкафы и шкафы систем автоматизации КИПиА</a> </li>
+            </ul>
+        </div>
+        <!--КОНЕЦ Левая колонка-->
+      
+           
+        <!-- Header-->
+        <div class="col-md-10 col-sm-12 d-flex flex-wrap justify-content-around">
+            <!--Карточка-->
+            <div class="product_card">
+                <div class="">
+                    <img class="" src="{% static 'img/product/catalog/01-bobyshka/bob.jpg' %}" width="320px" height="250px"
+                    style="border-radius: 10px;">
+                </div>
+                <div class="d-flex flex-column justify-content-between" style="margin: 10px 0 0 20px;height: 115px;">
+                    <div class="pc_title">Бобышки</div>
+                    <div class="d-flex">
+                        
+                        <div class="d-flex flex-row" style="margin-left: 160px;">
+                            <a class="pc_link" href="{% url 'mainapp:detail_exam' %}#catalog-product" style="text-decoration: none;">Подробнее</a>
+                            <img src="{% static 'img/vector_211.png' %}" width="32px" height="20px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--КОНЕЦ Карточка-->
+            <!--Карточка-->
+            <div class="product_card">
+                <div class="">
+                    <img class="" src="{% static 'img/product/catalog/02-gilzy_zaschit/gilz_zaschit.jpg' %}" width="320px" height="250px"
+                    style="border-radius: 10px;">
+                </div>
+                <div class="d-flex flex-column justify-content-between" style="margin: 10px 0 0 20px;height: 115px;">
+                    <div class="pc_title">Гильзы защитные</div>
+                    <div class="d-flex">
+                        
+                        <div class="d-flex flex-row" style="margin-left: 160px;">
+                            <a class="pc_link" href="" style="text-decoration: none;">Подробнее</a>
+                            <img src="{% static 'img/vector_211.png' %}" width="32px" height="20px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--КОНЕЦ Карточка-->
+            <!--Карточка-->
+            <div class="product_card">
+                <div class="">
+                    <img class="" src="{% static 'img/product/catalog/03-dempfer/dempfer.jpg' %}" width="320px" height="250px"
+                    style="border-radius: 10px;">
+                </div>
+                <div class="d-flex flex-column justify-content-between" style="margin: 10px 0 0 20px;height: 115px;">
+                    <div class="pc_title">Демпферное устройство</div>
+                    <div class="d-flex">
+                        
+                        <div class="d-flex flex-row" style="margin-left: 160px;">
+                            <a class="pc_link" href="" style="text-decoration: none;">Подробнее</a>
+                            <img src="{% static 'img/vector_211.png' %}" width="32px" height="20px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--КОНЕЦ Карточка-->
+            
+        </div>
+        <!--КОНЕЦ Карточки товаров-->
+       
+    </div>
+    <!-- КОНЕЦ Блок Каталог -->
+   
+    {% block help %}
+    {% include 'includes/inc_help.html' %}
+    {% endblock %}
+
+    
+    
+    {% endblock %}

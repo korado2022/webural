@@ -53,10 +53,11 @@
 
             
             <div class="col-lg-4 prem-main-card">
-                <a href="{% url 'mainapp:elektromontazhnye-raboty' %}" class="prem-main-a">
+                <a href="{% url 'mainapp:catalog-card' %}#catalog-product" class="prem-main-a" >
                     <div class="prem-main__item">
                         <div class="prem-main__img">
-                            <img src="{% static 'img/prem-main-3.svg' %}" alt="Производство электромонтажных работ">
+                            <img src="{% static 'img/klapan-arm.svg' %}" style="width: 60px; height: 60px;" 
+                            alt="Изготовление трубопроводной арматуры для КИПиА">
                         </div>
                         <div class="services-main__title">Изготовление трубопроводной арматуры для КИПиА</div>
 
@@ -65,10 +66,13 @@
             </div>
 
             <div class="col-lg-4 prem-main-card">
-                <a href="{% url 'mainapp:puskonaladochnye-raboty' %}" class="prem-main-a">
+                <a href="#" class="prem-main-a">
                     <div class="prem-main__item">
                         <div class="prem-main__img">
-                            <img src="{% static 'img/pipe_2.svg' %}" alt="Производство пусконаладочных работ" style="width: 60px; height: 60px;">
+                            <img src="{% static 'img/pipe_2.svg' %}" 
+                            alt="Запорные, регулирующие клапаны. Игольчатые, 
+                            сальниковые вентили, шаровые краны, стальные фланцы и др." 
+                            style="width: 60px; height: 60px;">
                         </div>
                         <div class="services-main__title">Запорные, регулирующие клапаны. Игольчатые, 
                             сальниковые вентили, шаровые краны, стальные фланцы и др. </div>
@@ -79,10 +83,11 @@
 
             
             <div class="col-lg-4 prem-main-card">
-                <a href="{% url 'mainapp:proektirovanie-kip' %}" class="prem-main-a">
+                <a href="#" class="prem-main-a">
                     <div class="prem-main__item">
                         <div class="prem-main__img">
-                            <img src="{% static 'img/pipe.svg' %}" alt="Проектирование КИП и А" style="width: 60px; height: 60px;">
+                            <img src="{% static 'img/pipe.svg' %}" alt="Изготовление стендов датчиков КИПиА" 
+                            style="width: 60px; height: 60px;">
                         </div>
                         <div class="services-main__title">Изготовление стендов датчиков КИПиА</div>
 
@@ -91,10 +96,13 @@
             </div>
 
             <div class="col-lg-4 prem-main-card">
-                <a href="{% url 'mainapp:proektirovanie-kip' %}" class="prem-main-a">
+                <a href="#" class="prem-main-a">
                     <div class="prem-main__item">
                         <div class="prem-main__img">
-                            <img src="{% static 'img/prem-main-3.svg' %}" alt="Проектирование КИП и А">
+                            <img src="{% static 'img/kipia.svg' %}" 
+                            alt="Осуществление поставки контрольно-измерительных 
+                            приборов и средств автоматизации"
+                            style="width: 60px; height: 60px;">
                         </div>
                         <div class="services-main__title">Осуществление поставки контрольно-измерительных 
                             приборов и средств автоматизации</div>
@@ -104,10 +112,11 @@
             </div>
 
             <div class="col-lg-4 prem-main-card">
-                <a href="{% url 'mainapp:proektirovanie-kip' %}" class="prem-main-a">
+                <a href="#" class="prem-main-a">
                     <div class="prem-main__item">
                         <div class="prem-main__img">
-                            <img src="{% static 'img/prem-main-3.svg' %}" alt="Проектирование КИП и А">
+                            <img src="{% static 'img/truba_mont.svg' %}" alt="Труба для монтажа КИПиА и её крепёжные элемены"
+                            style="width: 60px; height: 60px;">
                         </div>
                         <div class="services-main__title">Труба для монтажа КИПиА и её крепёжные элемены</div>
 
@@ -116,10 +125,11 @@
             </div>
 
             <div class="col-lg-4 prem-main-card">
-                <a href="{% url 'mainapp:proektirovanie-kip' %}" class="prem-main-a">
+                <a href="#" class="prem-main-a">
                     <div class="prem-main__item">
                         <div class="prem-main__img">
-                            <img src="{% static 'img/prem-main-3.svg' %}" alt="Проектирование КИП и А">
+                            <img src="{% static 'img/electric_panel.svg' %}" alt="Эл. Шкафы и шкафы систем автоматизации КИПиА"
+                            style="width: 60px; height: 60px;">
                         </div>
                         <div class="services-main__title">Эл. Шкафы и шкафы систем автоматизации КИПиА</div>
 
@@ -148,10 +158,11 @@
             <div class="d-flex flex-wrap flex-row justify-content-around">
                 <!---->
                 <div  class="mt20">
-                    <a class="kat" href="{% url 'mainapp:catalog-new' %}" style="text-decoration: none;">
+                    <a class="kat" href="{% url 'mainapp:catalog-descript' %}" style="text-decoration: none;">
                         <h5 class="kat_title"> 
                             Типовые и нестандартные изделия трубопроводов КИПиА</h5>
-                        <img class="kat_img" src="{% static 'img/product_image.jpg' %}" alt="image">
+                        <img class="kat_img" src="{% static 'img/product_image_3.jpg' %}" alt="image"
+                        style="width: 200px; height: 260px;">
                     </a>
                 </div>
                 <!---->
@@ -159,7 +170,8 @@
                 <div class="mt20">
                     <a class="kat" href="#" style="text-decoration: none;">
                         <h5 class="kat_title">Запорная арматура</h5>
-                        <img class="kat_img" src="{% static 'img/product_image_2.jpg' %}" alt="КИПиА">
+                        <img class="kat_img" src="{% static 'img/product_image_4.jpg' %}" alt="КИПиА"
+                        style="width: 200px; height: 260px;">
                     </a>
                 </div>
                 <!---->
@@ -167,7 +179,7 @@
                  <div class="mt20">
                     <a class="kat" href="#" style="text-decoration: none;">
                         <h5 class="kat_title">Стенды датчиков КИПиА</h5>
-                        <img class="kat_img" src="{% static 'img/product_image_2.jpg' %}" alt="КИПиА">
+                        <img class="kat_img" src="{% static 'img/product_image_5.jpg' %}" alt="КИПиА">
                     </a>
                 </div>
                 <!---->
@@ -175,7 +187,8 @@
                  <div class="mt20">
                     <a class="kat" href="#" style="text-decoration: none;">
                         <h5 class="kat_title">Приборы для КИПиА </h5>
-                        <img class="kat_img" src="{% static 'img/product_image_2.jpg' %}" alt="КИПиА">
+                        <img class="kat_img" src="{% static 'img/product_image_6.jpg' %}" alt="КИПиА"
+                        style="width: 200px; height: 260px;">
                     </a>
                 </div>
                 <!---->

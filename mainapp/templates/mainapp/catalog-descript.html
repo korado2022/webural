@@ -1,0 +1,119 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+
+
+{% block title %}{{ title_name }}{% endblock %}
+{% block content %}
+
+
+    <!-- Block search-->
+    <div class="container">
+        <form class="d-flex" role="search" method="GET" action="#">
+          <input class="form-control me-2" name="q" type="search" placeholder="Поиск" aria-label="Поиск">
+          <button class="btn btn-outline-success" type="submit" href="">Поиск</button>
+        </form>
+    </div>
+    <!-- End Block search-->
+    <!-- Блок Каталог -->
+    <div class="container">
+        <h1 class="title_page">Типовые и нестандартные изделия трубопроводов КИПиА</h1>
+    </div>
+   
+    <div class="container catalog_block" style="margin-top: 50px">
+        
+        <!--Левая колонка-->
+        <div class="col-md-3 l_c" style="background: #E96300;color: white;">
+            <h2 style="margin-top: 20px;" id="catalog-product">Каталог</h2>
+            <ul class="list-group">
+                <li class="list-group-item activ"> <a href="#">Типовые и нестандартные изделия трубопроводов КИПиА</a> </li>
+                <li class="list-group-item"> <a href="#">Запорная арматура</a> </li>
+                <li class="list-group-item"> <a href="#">Стенды датчиков КИПиА</a> </li>
+                <li class="list-group-item"> <a href="#">Приборы для КИПиА</a> </li>
+                <li class="list-group-item"> <a href="#">Трубы для КИПиА</a> </li>
+                <li class="list-group-item"> <a href="#">Электро техническая продукция</a> </li>
+                
+            </ul>
+        </div>
+        <!--КОНЕЦ Левая колонка-->
+      
+           
+        <!-- Table-->
+        <div class="col-md-9 d-flex flex-column" style="margin-bottom: 30px;">
+            <div class="detail-card d-flex flex-column" style="margin-bottom: 30px;">
+                <!--Descript card-->
+                <div class="description text_orange" style="font-size: 1rem;">
+                    <h4>Бобышки</h4>
+                    Бобышки предназначены для установки термопреобразователей, термометров, приборов для 
+                    измерения давления, а также для отборных устройств и запорных вентилей импульсных линий, 
+                    используемых в системах автоматизации технологических процессов в промышленности. 
+                    Изделия могут быть изготовлены из ст.20, ст.09г2с (морозостойкая сталь), ст.08х18н10, 
+                    ст.12х18н10т (нержавеющая сталь).<br>
+                    <br>
+                    Обозначение бобышек:<br>
+                    Первый символ – «Б» - бобышка;<br>
+                    Второй символ – «П» - прямая, «С» - скошенная;<br>
+                    Третий символ – тип присоединения;<br>
+                    Следующие символы после знака «-» резьба;<br>
+                    Следующие символы после знака «-» длина бобышки в мм.<br>
+                    <br>
+                    
+                </div>
+                <div class="" style="margin: 0 0 50px 50px;">
+                    <a class="pc_btn pc_btn_oran" href="{% url 'mainapp:catalog-card-bobyshki' %}#catalog-product" 
+                    role="button" style="">Подробнее</a>
+                </div>
+                <!-- End Descript card-->
+            </div>
+            <div class="detail-card d-flex flex-column" style="margin-bottom: 30px;">
+                <!--Descript card-->
+                <div class="description text_orange" style="font-size: 1rem;">
+                    <h4>Гильзы защитные</h4>
+                    <p>Гильзы защитные предназначены для установки термопреобразователей на объектах и 
+                        обеспечивают их защиту от воздействия давления рабочей среды. Позволяют производить 
+                        монтаж и замену датчиков температуры без нарушения герметизации системы.</p>
+                    <p>Благодаря защитным гильзам установить или заменить температурный датчик можно прямо 
+                        на работающем трубопроводе или другом объекте – герметизация не нарушается.<br>
+                    <br>
+                    Обеспечивается защита оборудования: температурные датчики, термометры сопротивления, 
+                    термопары, комплекты термометров сопротивления. Защитные функции направлены преимущественно
+                    на предотвращение разрушающих воздействий рабочей среды при ее скоростном напоре. Рабочая 
+                    среда – жидкости, газы (в т.ч. химически агрессивные). Технологическая система не подвергается 
+                    разгерметизации в ходе монтажных работ.<br>
+                    <br>
+                        Пример условного обозначения:<br>
+                        Гильза защитная сварная ГЗС-16-М20х1,5-М20х1,5-10-80;<br>
+                        ГЗС - гильза защитная свараная;<br>
+                        ГЗЦ - гильза защитная цельноточеная;<br>
+                        ГЗФЦ - гильза защитная фланцевая цельноточеная;<br>
+                        ГЗФС - гильза защитная фланцевая сварная;<br>
+                        16 - номинальное (условное) давление в МПа;<br>
+                        М20х1,5 - резьба присоединительная (внутренняя);<br>
+                        М20х1,5 - резьба присоединительная (наружная);<br>
+                        10 - наружный диаметр термопреобразователя;<br>
+                        80 - длина погружаемой части.<br>
+                    <br>
+                    При использовании гильзы монтажная длина L должна соответствовать длине термоэлектрического 
+                    преобразователя или термометра сопротивления.</p>
+                        <br>
+                    
+                </div>
+                <div class="" style="margin: 0 0 50px 50px;">
+                    <a class="pc_btn pc_btn_oran" href="#" role="button" style="">Подробнее</a>
+                </div>
+                <!-- End Descript card-->
+            </div>
+            
+        </div>
+
+        
+       
+    </div>
+    <!-- КОНЕЦ Блок Каталог -->
+   
+    {% block help %}
+    {% include 'includes/inc_help.html' %}
+    {% endblock %}
+
+    
+    
+    {% endblock %}

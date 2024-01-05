@@ -1,0 +1,459 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+
+
+{% block title %}{{ title_name }}{% endblock %}
+{% block content %}
+
+
+    <!-- Block search-->
+    <div class="container">
+        <form class="d-flex" role="search" method="GET" action="#">
+          <input class="form-control me-2" name="q" type="search" placeholder="Поиск" aria-label="Поиск">
+          <button class="btn btn-outline-success" type="submit" href="">Поиск</button>
+        </form>
+    </div>
+    <!-- End Block search-->
+    <!-- Блок Каталог -->
+    <div class="container">
+        <h1 class="title_page">Бобышки прямые БП01</h1>
+    </div>
+   
+    <div class="container catalog_block" style="margin-top: 50px">
+        
+        <!--Левая колонка-->
+        <div class="col-md-3 l_c" style="background: #E96300;color: white;">
+            <h2 style="margin-top: 20px;" id="catalog-product"> Бобышки</h2>
+            <ul class="list-group">
+                <li class="list-group-item activ"> <a href="#">Бобышки прямые БП01</a> </li>
+                <li class="list-group-item"> <a href="#">Бобышки прямые БП02</a> </li>
+                <li class="list-group-item"> <a href="#">Бобышки прямые БП03</a> </li>
+                
+            </ul>
+        </div>
+        <!--КОНЕЦ Левая колонка-->
+      
+           
+        <!-- Table-->
+        <div class="col-md-10 col-sm-12 d-flex flex-wrap justify-content-around">
+            <!-- Header-->
+        <div class="items list" >
+            <div class="product-item-list" id="bx_1847241719_118">
+                <div>
+                    <a href="#" class="image">
+                        <img class="image-catalog" src="{% static 'img/product/catalog/01-bobyshka/bob.jpg' %}" alt="" title="">
+                    </a>
+                    <div class="information-desc">
+                        <div class="information">
+                            
+                            <div class="wrap-x1">
+                                <div class="category"></div>
+                                <div class="name"><h3>Бобышки прямые БП01</h3></div>
+                            </div>
+                            
+                            <div class="buttons">
+                                <a href="#" class="pc_btn pc_btn_oran">Подробнее</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-product-description">
+                    <div class="overflowx">
+                        <!-- Фиксированная шапка таблицы -->
+                        <div class="tab-product-table-fixed">
+                            <div class="thead">
+                                <div class="td"><p align="center"><b>Наименование</b></p></div>
+                                <div class="td"><p align="center"><b>Материал</b></p></div>
+                                <div class="td"><p align="center"><b>D внеш., мм</b></p></div>
+                                <div class="td"><p align="center"><b>Длина, L- мм</b></p></div>
+                                <div class="td"><p align="center"><b>В корзину</b></p></div>
+                                <div class="td"><p align="center"><b>Детали</b></p></div>       
+                            </div>
+                        </div>
+    
+                        <!-- основная таблица -->
+                        <table cellpadding="0" border="0" class="tab-product-table">
+                            <thead>
+                                <tr>
+                                    <td><p align="center"><b>Наименование</b></p></td>
+                                    <td><p align="center"><b>Материал</b></p></td>
+                                    <td><p align="center"><b>D внеш., мм</b></p></td>
+                                    <td><p align="center"><b>Длина, L- мм</b></p></td>
+                                    <td><p align="center"><b>В корзину</b></p></td>
+                                    <td><p align="center"><b>Детали</b></p></td>
+                                </tr>
+                            </thead>
+                            <tbody>	
+                                <tr>
+                                    <td>
+                                        <p id="bx_1847241719_4120">
+                                            <a hreflang="ru" class="table-link pc_title" href="#">БП01-М12*1,5-30 ст.20</a></p>
+                                    </td>
+                                    <td><p>сталь 20 </p></td>
+                                    <td><p>22 </p></td>
+                                    <td><p>30 </p></td>
+                                    <td>
+                                        <button class="card__add pc_btn2 pc_btn_oran" style="border: none;font-size: 0.8rem" 
+                                        data-id="{{ product.id }}">В корзину</button>
+                                    </td>
+                                    <td><p align="center"><a hreflang="ru" class="table-link" 
+                                        href="{% url 'mainapp:product-detail' %}#catalog-product">Подробнее &gt;</a></p></td>
+                                </tr>
+                                <tr>
+                                    <td><p id="bx_1847241719_4527">
+                                        <a hreflang="ru" class="table-link" href="#">БП01-М12*1,5-30 ст.08х18н10 (нерж.сталь)</a></p>
+                                    </td>
+                                    <td><p>сталь 08х18н10 </p></td>
+                                    <td><p>22 </p></td>
+                                    <td><p>30 </p></td>
+                                    <td>
+                                        <button class="card__add pc_btn2 pc_btn_oran" style="border: none;font-size: 0.8rem" 
+                                        data-id="{{ product.id }}">В корзину</button>
+                                    </td>
+                                    <td><p align="center"><a hreflang="ru" class="table-link" href="#">Подробнее &gt;</a></p></td>
+                                </tr>
+                                <tr>
+                                    <td><p id="bx_1847241719_4528">
+                                        <a hreflang="ru" class="table-link" href="#">БП01-М12*1,5-50 ст.20</a></p>
+                                    </td>
+                                    <td><p>сталь 20 </p></td>
+                                    <td><p>22 </p></td>
+                                    <td><p>50 </p></td>
+                                    <td>
+                                        <button class="card__add pc_btn2 pc_btn_oran" style="border: none;font-size: 0.8rem" 
+                                        data-id="{{ product.id }}">В корзину</button>
+                                    </td>
+                                    <td><p align="center"><a hreflang="ru" class="table-link" href="#">Подробнее &gt;</a></p></td>
+                                </tr>
+                                <tr>
+                                    <td><p id="bx_1847241719_4529">
+                                        <a hreflang="ru" class="table-link" href="#">БП01-М12*1,5-50 ст.08х18н10 (нерж.сталь)</a></p>
+                                    </td>
+                                    <td><p>сталь 08х18н10 </p></td>
+                                    <td><p>22 </p></td>
+                                    <td><p>50 </p></td>
+                                    <td>
+                                        <button class="card__add pc_btn2 pc_btn_oran" style="border: none;font-size: 0.8rem" 
+                                        data-id="{{ product.id }}">В корзину</button>
+                                    </td>
+                                    <td><p align="center"><a hreflang="ru" class="table-link" href="#">Подробнее &gt;</a></p></td>
+                                </tr>
+                                <tr>
+                                    <td><p id="bx_1847241719_4530">
+                                        <a hreflang="ru" class="table-link" href="#">БП01-М12*1,5-100 ст.20</a></p></td>
+                                    <td><p>сталь 20 </p></td>
+                                    <td><p>22 </p></td>
+                                    <td><p>100 </p></td>
+                                    <td>
+                                        <button class="card__add pc_btn2 pc_btn_oran" style="border: none;font-size: 0.8rem" 
+                                        data-id="{{ product.id }}">В корзину</button>
+                                    </td>
+                                    <td><p align="center"><a hreflang="ru" class="table-link" href="#">Подробнее &gt;</a></p></td>
+                                </tr>
+                                <tr>
+                                    <td><p id="bx_1847241719_4531">
+                                        <a hreflang="ru" class="table-link" href="#">БП01-М12*1,5-100 ст.08х18н10 (нерж.сталь)</a></p></td>
+                                    <td><p>сталь 08х18н10 </p></td>
+                                    <td><p>22 </p></td>
+                                    <td><p>100 </p></td>
+                                    <td>
+                                        <button class="card__add pc_btn2 pc_btn_oran" style="border: none;font-size: 0.8rem" 
+                                        data-id="{{ product.id }}">В корзину</button>
+                                    </td>
+                                    <td><p align="center"><a hreflang="ru" class="table-link" href="#">Подробнее &gt;</a></p></td>
+                                </tr>
+                                <tr>
+                                    <td><p id="bx_1847241719_4532">
+                                        <a hreflang="ru" class="table-link" href="#">БП01-G1/4-30 ст.20</a></p></td>
+                                    <td><p>сталь 20 </p></td>
+                                    <td><p>22 </p></td>
+                                    <td><p>30 </p></td>
+                                    <td>
+                                        <button class="card__add pc_btn2 pc_btn_oran" style="border: none;font-size: 0.8rem" 
+                                        data-id="{{ product.id }}">В корзину</button>
+                                    </td>
+                                    <td><p align="center"><a hreflang="ru" class="table-link" href="#">Подробнее &gt;</a></p></td>
+                                </tr>
+                                <tr>
+                                    <td><p id="bx_1847241719_4533">
+                                        <a hreflang="ru" class="table-link" href="#">БП01-G1/4-30 ст.08х18н10 (нерж.сталь)</a></p>
+                                    </td>
+                                    <td><p>сталь 08х18н10 </p></td>
+                                    <td><p>22 </p></td>
+                                    <td><p>30 </p></td>
+                                    <td>
+                                        <button class="card__add pc_btn2 pc_btn_oran" style="border: none;font-size: 0.8rem" 
+                                        data-id="{{ product.id }}">В корзину</button>
+                                    </td>
+                                    <td><p align="center"><a hreflang="ru" class="table-link" href="#">Подробнее &gt;</a></p></td>
+                                </tr>
+                                <tr>
+                                    <td><p id="bx_1847241719_4534">
+                                        <a hreflang="ru" class="table-link" href="#">БП01-G1/4-50 ст.20</a></p>
+                                    </td>
+                                    <td><p>сталь 20 </p></td>
+                                    <td><p>22 </p></td>
+                                    <td><p>50 </p></td>
+                                    <td>
+                                        <button class="card__add pc_btn2 pc_btn_oran" style="border: none;font-size: 0.8rem" 
+                                        data-id="{{ product.id }}">В корзину</button>
+                                    </td>
+                                    <td><p align="center"><a hreflang="ru" class="table-link" href="#">Подробнее &gt;</a></p></td>
+                                </tr>
+                                <tr>
+                                    <td><p id="bx_1847241719_4535">
+                                        <a hreflang="ru" class="table-link" href="#">БП01-G1/4-50 ст.08х18н10 (нерж.сталь)</a></p>
+                                    </td>
+                                    <td><p>сталь 08х18н10 </p></td>
+                                    <td><p>22 </p></td>
+                                    <td><p>50 </p></td>
+                                    <td>
+                                        <button class="card__add pc_btn2 pc_btn_oran" style="border: none;font-size: 0.8rem" 
+                                        data-id="{{ product.id }}">В корзину</button>
+                                    </td>
+                                    <td><p align="center"><a hreflang="ru" class="table-link" href="#">Подробнее &gt;</a></p></td>
+                                </tr>
+                                <tr>
+                                    <td><p id="bx_1847241719_4536">
+                                        <a hreflang="ru" class="table-link" href="#">БП01-G1/4-100 ст.20</a></p>
+                                    </td>
+                                    <td><p>сталь 20 </p></td>
+                                    <td><p>22 </p></td>
+                                    <td><p>100 </p></td>
+                                    <td>
+                                        <button class="card__add pc_btn2 pc_btn_oran" style="border: none;font-size: 0.8rem" 
+                                        data-id="{{ product.id }}">В корзину</button>
+                                    </td>
+                                    <td><p align="center"><a hreflang="ru" class="table-link" href="#">Подробнее &gt;</a></p></td>
+                                </tr>
+                                <tr>
+                                    <td><p id="bx_1847241719_4537">
+                                        <a hreflang="ru" class="table-link" href="#">БП01-G1/4-100 ст.08х18н10 (нерж.сталь)</a></p>
+                                    </td>
+                                    <td><p>сталь 08х18н10 </p></td>
+                                    <td><p>22 </p></td>
+                                    <td><p>100 </p></td>
+                                    <td>
+                                        <button class="card__add pc_btn2 pc_btn_oran" style="border: none;font-size: 0.8rem" 
+                                        data-id="{{ product.id }}">В корзину</button>
+                                    </td>
+                                    <td><p align="center"><a hreflang="ru" class="table-link" href="#">Подробнее &gt;</a></p></td>
+                                </tr>
+                                <tr>
+                                    <td><p id="bx_1847241719_4538">
+                                        <a hreflang="ru" class="table-link" href="#">БП01-R1/4-50 ст.20</a></p>
+                                    </td>
+                                    <td><p>сталь 20 </p></td>
+                                    <td><p>22 </p></td>
+                                    <td><p>50 </p></td>
+                                    <td>
+                                        <button class="card__add pc_btn2 pc_btn_oran" style="border: none;font-size: 0.8rem" 
+                                        data-id="{{ product.id }}">В корзину</button>
+                                    </td>
+                                    <td><p align="center"><a hreflang="ru" class="table-link" href="#">Подробнее &gt;</a></p></td>
+                                </tr>
+                                <tr>
+                                    <td><p id="bx_1847241719_4539">
+                                        <a hreflang="ru" class="table-link" href="#">БП01-R1/4-50 ст.08х18н10 (нерж.сталь)</a></p>
+                                    </td>
+                                    <td><p>сталь 08х18н10 </p></td>
+                                    <td><p>22 </p></td>
+                                    <td><p>50 </p></td>
+                                    <td>
+                                        <button class="card__add pc_btn2 pc_btn_oran" style="border: none;font-size: 0.8rem" 
+                                        data-id="{{ product.id }}">В корзину</button>
+                                    </td>
+                                    <td><p align="center"><a hreflang="ru" class="table-link" href="#">Подробнее &gt;</a></p></td>
+                                </tr>
+                                <tr>
+                                    <td><p id="bx_1847241719_4540">
+                                        <a hreflang="ru" class="table-link" href="#">БП01-R1/4-100 ст.20</a></p>
+                                    </td>
+                                    <td><p>сталь 20 </p></td>
+                                    <td><p>22 </p></td>
+                                    <td><p>100 </p></td>
+                                    <td>
+                                        <button class="card__add pc_btn2 pc_btn_oran" style="border: none;font-size: 0.8rem" 
+                                        data-id="{{ product.id }}">В корзину</button>
+                                    </td>
+                                    <td><p align="center"><a hreflang="ru" class="table-link" href="#">Подробнее &gt;</a></p></td>
+                                </tr>
+                                <tr>
+                                    <td><p id="bx_1847241719_4541">
+                                        <a hreflang="ru" class="table-link" href="#">БП01-R1/4-100 ст.08х18н10 (нерж.сталь)</a></p>
+                                    </td>
+                                    <td><p>сталь 08х18н10 </p></td>
+                                    <td><p>22 </p></td>
+                                    <td><p>100 </p></td>
+                                    <td>
+                                        <button class="card__add pc_btn2 pc_btn_oran" style="border: none;font-size: 0.8rem" 
+                                        data-id="{{ product.id }}">В корзину</button>
+                                    </td>
+                                    <td><p align="center"><a hreflang="ru" class="table-link" href="#">Подробнее &gt;</a></p></td>
+                                </tr>
+                                <tr>
+                                    <td><p id="bx_1847241719_4542">
+                                        <a hreflang="ru" class="table-link" href="#">БП01-К1/4 (NPT 1/4)-50 ст.20</a></p>
+                                    </td>
+                                    <td><p>сталь 20 </p></td>
+                                    <td><p>22 </p></td>
+                                    <td><p>50 </p></td>
+                                    <td>
+                                        <button class="card__add pc_btn2 pc_btn_oran" style="border: none;font-size: 0.8rem" 
+                                        data-id="{{ product.id }}">В корзину</button>
+                                    </td>
+                                    <td><p align="center"><a hreflang="ru" class="table-link" href="#">Подробнее &gt;</a></p></td>
+                                </tr>
+                                <tr>
+                                    <td><p id="bx_1847241719_4543">
+                                        <a hreflang="ru" class="table-link" href="#">БП01-К1/4 (NPT 1/4)-50 ст.08х18н10 (нерж.сталь)</a></p>
+                                    </td>
+                                    <td><p>сталь 08х18н10 </p></td>
+                                    <td><p>22 </p></td>
+                                    <td><p>50 </p></td>
+                                    <td>
+                                        <button class="card__add pc_btn2 pc_btn_oran" style="border: none;font-size: 0.8rem" 
+                                        data-id="{{ product.id }}">В корзину</button>
+                                    </td>
+                                    <td><p align="center"><a hreflang="ru" class="table-link" href="#">Подробнее &gt;</a></p></td>
+                                </tr>
+                                <tr>
+                                    <td><p id="bx_1847241719_4544">
+                                        <a hreflang="ru" class="table-link" href="#">БП01-К1/4 (NPT 1/4)-100 ст.20</a></p>
+                                    </td>
+                                    <td><p>сталь 20 </p></td>
+                                    <td><p>22 </p></td>
+                                    <td><p>100 </p></td>
+                                    <td>
+                                        <button class="card__add pc_btn2 pc_btn_oran" style="border: none;font-size: 0.8rem" 
+                                        data-id="{{ product.id }}">В корзину</button>
+                                    </td>
+                                    <td><p align="center"><a hreflang="ru" class="table-link" href="#">Подробнее &gt;</a></p></td>
+                                </tr>
+                                <tr>
+                                    <td><p id="bx_1847241719_4545">
+                                        <a hreflang="ru" class="table-link" href="#">БП01-К1/4 (NPT 1/4)-100 ст.08х18н10 (нерж.сталь)</a></p>
+                                    </td>
+                                    <td><p>сталь 08х18н10 </p></td>
+                                    <td><p>22 </p></td>
+                                    <td><p>100 </p></td>
+                                    <td>
+                                        <button class="card__add pc_btn2 pc_btn_oran" style="border: none;font-size: 0.8rem" 
+                                        data-id="{{ product.id }}">В корзину</button>
+                                    </td>
+                                    <td><p align="center"><a hreflang="ru" class="table-link" href="#">Подробнее &gt;</a></p></td>
+                                </tr>
+                                <tr>
+                                    <td><p id="bx_1847241719_4546">
+                                        <a hreflang="ru" class="table-link" href="#">БП01-М16*1,5-30 ст.20</a></p>
+                                    </td>
+                                    <td><p>сталь 20 </p></td>
+                                    <td><p>30 </p></td>
+                                    <td><p>30 </p></td>
+                                    <td>
+                                        <button class="card__add pc_btn2 pc_btn_oran" style="border: none;font-size: 0.8rem" 
+                                        data-id="{{ product.id }}">В корзину</button>
+                                    </td>
+                                    <td><p align="center"><a hreflang="ru" class="table-link" href="#">Подробнее &gt;</a></p></td>
+                                </tr>
+                                <tr>
+                                    <td><p id="bx_1847241719_4547">
+                                        <a hreflang="ru" class="table-link" href="#">БП01-М16*1,5-30 ст.08х18н10 (нерж.сталь)</a></p>
+                                    </td>
+                                    <td><p>сталь 08х18н10 </p></td>
+                                    <td><p>30 </p></td>
+                                    <td><p>30 </p></td>
+                                    <td>
+                                        <button class="card__add pc_btn2 pc_btn_oran" style="border: none;font-size: 0.8rem" 
+                                        data-id="{{ product.id }}">В корзину</button>
+                                    </td>
+                                    <td><p align="center"><a hreflang="ru" class="table-link" href="#">Подробнее &gt;</a></p></td>
+                                </tr>
+                                <tr>
+                                    <td><p id="bx_1847241719_4548">
+                                        <a hreflang="ru" class="table-link" href="#">БП01-М16*1,5-50 ст.20</a></p></td>
+                                    <td><p>сталь 20 </p></td>
+                                    <td><p>30 </p></td>
+                                    <td><p>50 </p></td>
+                                    <td>
+                                        <button class="card__add pc_btn2 pc_btn_oran" style="border: none;font-size: 0.8rem" 
+                                        data-id="{{ product.id }}">В корзину</button>
+                                    </td>
+                                    <td><p align="center"><a hreflang="ru" class="table-link" href="#">Подробнее &gt;</a></p></td>
+                                </tr>
+                                <tr>
+                                    <td><p id="bx_1847241719_4549">
+                                        <a hreflang="ru" class="table-link" href="#">БП01-М16*1,5-50 ст.08х18н10 (нерж.сталь)</a></p></td>
+                                    <td><p>сталь 08х18н10 </p></td>
+                                    <td><p>30 </p></td>
+                                    <td><p>50 </p></td>
+                                    <td>
+                                        <button class="card__add pc_btn2 pc_btn_oran" style="border: none;font-size: 0.8rem" 
+                                        data-id="{{ product.id }}">В корзину</button>
+                                    </td>
+                                    <td><p align="center"><a hreflang="ru" class="table-link" href="#">Подробнее &gt;</a></p></td>
+                                </tr>
+                                <tr>
+                                    <td><p id="bx_1847241719_4550">
+                                        <a hreflang="ru" class="table-link" href="#">БП01-М16*1,5-100 ст.20</a></p></td>
+                                    <td><p>сталь 20 </p></td>
+                                    <td><p>30 </p></td>
+                                    <td><p>100 </p></td>
+                                    <td>
+                                        <button class="card__add pc_btn2 pc_btn_oran" style="border: none;font-size: 0.8rem" 
+                                        data-id="{{ product.id }}">В корзину</button>
+                                    </td>
+                                    <td><p align="center"><a hreflang="ru" class="table-link" href="#">Подробнее &gt;</a></p></td>
+                                </tr>
+                                <tr>
+                                    <td><p id="bx_1847241719_4551">
+                                        <a hreflang="ru" class="table-link" href="#">БП01-М16*1,5-100 ст.08х18н10 (нерж.сталь)</a></p></td>
+                                    <td><p>сталь 08х18н10 </p></td>
+                                    <td><p>30 </p></td>
+                                    <td><p>100 </p></td>
+                                    <td>
+                                        <button class="card__add pc_btn2 pc_btn_oran" style="border: none;font-size: 0.8rem" 
+                                        data-id="{{ product.id }}">В корзину</button>
+                                    </td>
+                                    <td><p align="center"><a hreflang="ru" class="table-link" href="#">Подробнее &gt;</a></p></td>
+                                </tr>
+                                <tr>
+                                    <td><p id="bx_1847241719_4552">
+                                        <a hreflang="ru" class="table-link" href="#">БП01-М20х1,5-30 ст.20</a></p></td>
+                                    <td><p>сталь 20 </p></td>
+                                    <td><p>30 </p></td>
+                                    <td><p>30 </p></td>
+                                    <td>
+                                        <button class="card__add pc_btn2 pc_btn_oran" style="border: none;font-size: 0.8rem" 
+                                        data-id="{{ product.id }}">В корзину</button>
+                                    </td>
+                                    <td><p align="center"><a hreflang="ru" class="table-link" href="#">Подробнее &gt;</a></p></td>
+                                </tr>
+    
+                            </tbody>
+                        </table>
+    
+                    </div>			
+                </div>
+                
+        
+            </div>
+            <p></p>
+        </div>
+        
+        <!--Конец Таблица товаров-->
+        </div>
+            
+       
+    </div>
+    <!-- КОНЕЦ Блок Каталог -->
+   
+    {% block help %}
+    {% include 'includes/inc_help.html' %}
+    {% endblock %}
+
+    
+    
+    {% endblock %}

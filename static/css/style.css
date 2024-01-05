@@ -630,6 +630,9 @@ a.table-link {
 .block_help {
     flex-direction: row;
 }
+.table-link:hover {
+    color: #009181;
+}
 
 /* СТРАНИЦА Детальная товара */
 
@@ -754,7 +757,9 @@ a.table-link {
     height: 260px;
 }
 /* КОНЕЦ Главная Услуги */
-
+.description {
+    padding: 30px;
+}
 /* Производители */
 .gray-bg {
     background: #F7F8F9;

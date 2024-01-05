@@ -43,3 +43,27 @@ class KipaPageView(TemplateView):
 
 class DetailexamPageView(TemplateView):
     template_name = "mainapp/detail_exam.html"
+
+class CatalogCardPageView(TemplateView):
+    template_name = "mainapp/catalog-card.html"
+
+class CatalogDetailPageView(TemplateView):
+    template_name = "mainapp/catalog-detail.html"
+
+class CatalogCardBobyshkiPageView(TemplateView):
+    template_name = "mainapp/catalog-card-bobyshki.html"
+
+
+class BobyshkiTablePageView(TemplateView):
+    template_name = "mainapp/bobyshki-table.html"
+
+
+class ProductDetailPageView(TemplateView):
+    template_name = "mainapp/product-detail.html"
+
+
+class CatalogDescriptPageView(TemplateView):
+    template_name = "mainapp/catalog-descript.html"
+
+
+
