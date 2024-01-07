@@ -94,10 +94,10 @@ body {
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 14vh;
+        top: calc(275px - 10vw);
         right: 20px;
         width: 80%;
-        background-color: #E96300;
+        background-color: #fff;
         padding: 10px;
         z-index: 1;
     }
@@ -107,7 +107,7 @@ body {
     }
 
     #menu-list a {
-        color: #fff;
+        color: #E96300;
         padding: 10px;
         text-align: center;
         text-decoration: none;
@@ -120,7 +120,7 @@ body {
         background: transparent;
         width: 40px;
         height: 26px;
-        margin: 20px 20px;
+        margin: 20px 0 20px 90%;
     }
     .burger::before,
     .burger::after {
