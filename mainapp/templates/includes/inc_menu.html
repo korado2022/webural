@@ -39,25 +39,18 @@
                  <ul class="nav nav-underline me-auto mb-2 mb-lg-0 sm">
                      
                      <li class="nav-item">
-                         <a class="nav-link {% if menu_name == 'index' %}active{% endif %}" aria-current="page" href="{% url 'mainapp:index' %}">Главная</a>
+                         <a class="nav-link {% if menu_name == 'index' %}active{% endif %}" 
+                         aria-current="page" href="{% url 'mainapp:index' %}">Главная</a>
                      </li>
                      <li class="nav-item">
-                         <a class="nav-link {% if menu_name == 'catalog' %}active{% endif %}" aria-current="page" href="{% url 'mainapp:catalog-card' %}">Каталог</a>
+                         <a class="nav-link {% if menu_name == 'catalog' %}active{% endif %}" 
+                         aria-current="page" href="{% url 'mainapp:catalog-card' %}">Предлагаем</a>
                      </li>
-                    
-                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle {% if menu_name == 'services' %}active{% endif %}" 
-                            href="#" id="navbarDropdownMenuLink" role="button" 
-                            data-bs-toggle="dropdown" aria-expanded="false">Услуги
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                          <li><a class="dropdown-item" href="{% url 'mainapp:puskonaladochnye-raboty' %}">Пусконаладочные работы</a></li>
-                          <li><a class="dropdown-item" href="{% url 'mainapp:elektromontazhnye-raboty' %}">Электромонтажные работы</a></li>
-                          <li><a class="dropdown-item" href="{% url 'mainapp:proektirovanie-kip' %}">Проектирование КИПиА</a></li>
-                        </ul>
-                      </li>
+                     <li class="nav-item">
+                      <a class="nav-link {% if menu_name == 'catalog' %}active{% endif %}" 
+                      aria-current="page" href="{% url 'mainapp:catalog-descript' %}">Продукция</a>
+                    </li>
                      
-                    
                      <li class="nav-item">
                          <a class="nav-link {% if menu_name == 'contacts' %}active{% endif %}" 
                          aria-current="page" href="{% url 'mainapp:contacts' %}">Контакты</a>

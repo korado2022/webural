@@ -3,28 +3,29 @@
 {% block content %}
 
     <!-- Блок advantages-->
-    <div class="container">
+    <div class="container advant">
         <div class="features">
-      <div class="feature__item">
-        <div class="feature__img">
-          <img class="icon-custom" src="{% static 'img/longevity.svg' %}" alt="Мы 150 лет на рынке">
+            <div class="feature__item">
+                <div class="feature__img">
+                <img class="icon-custom" src="{% static 'img/longevity.svg' %}" alt="Мы 150 лет на рынке">
+                </div>
+                <div class="feature__text">Мы 150 лет на рынке</div>
+            </div>
+            <div class="feature__item">
+                <div class="feature__img">
+                <img class="icon-custom" src="{% static 'img/quality.svg' %}" alt="Надежный партнер Вашего бизнеса">
+                </div>
+                <div class="feature__text">Надежный партнер<br>Вашего бизнеса</div>
+            </div>
+            <div class="feature__item">
+                <div class="feature__img">
+                <img class="icon-custom" src="{% static 'img/envelope_send.svg' %}" alt="Есть вопросы? Нужна консультация? Напишите нам">
+                </div>
+                <div class="feature__text"><a href="#formHelp" 
+                    class="file_a">Есть вопросы?<br>Нужна консультация?<br>Напишите нам</a></div>
+            </div>
         </div>
-        <div class="feature__text">Мы 150 лет на рынке</div>
-      </div>
-      <div class="feature__item">
-        <div class="feature__img">
-          <img class="icon-custom" src="{% static 'img/quality.svg' %}" alt="Надежный партнер Вашего бизнеса">
-        </div>
-        <div class="feature__text">Надежный партнер<br>Вашего бизнеса</div>
-      </div>
-      <div class="feature__item">
-        <div class="feature__img">
-          <img class="icon-custom" src="{% static 'img/envelope_send.svg' %}" alt="Есть вопросы? Нужна консультация? Напишите нам">
-        </div>
-        <div class="feature__text"><a href="#formHelp" 
-            class="file_a">Есть вопросы?<br>Нужна консультация?<br>Напишите нам</a></div>
-      </div>
-    </div></div>
+    </div>
     <!-- КОНЕЦ Блок advantages-->
     <!-- Блок О компании -->
     <div class="container" id="about_my">
@@ -131,7 +132,7 @@
                             <img src="{% static 'img/electric_panel.svg' %}" alt="Эл. Шкафы и шкафы систем автоматизации КИПиА"
                             style="width: 60px; height: 60px;">
                         </div>
-                        <div class="services-main__title">Эл. Шкафы и шкафы систем автоматизации КИПиА</div>
+                        <div class="services-main__title">Электрические шкафы и шкафы систем автоматизации КИПиА</div>
 
                     </div>
                 </a>
@@ -161,8 +162,7 @@
                     <a class="kat" href="{% url 'mainapp:catalog-descript' %}" style="text-decoration: none;">
                         <h5 class="kat_title"> 
                             Типовые и нестандартные изделия трубопроводов КИПиА</h5>
-                        <img class="kat_img" src="{% static 'img/product_image_3.jpg' %}" alt="image"
-                        style="width: 200px; height: 260px;">
+                        <img  class="kat_img" src="{% static 'img/product_image_3.jpg' %}" alt="image">
                     </a>
                 </div>
                 <!---->
@@ -170,8 +170,7 @@
                 <div class="mt20">
                     <a class="kat" href="#" style="text-decoration: none;">
                         <h5 class="kat_title">Запорная арматура</h5>
-                        <img class="kat_img" src="{% static 'img/product_image_4.jpg' %}" alt="КИПиА"
-                        style="width: 200px; height: 260px;">
+                        <img class="kat_img" src="{% static 'img/product_image_4.jpg' %}" alt="КИПиА">
                     </a>
                 </div>
                 <!---->
@@ -187,8 +186,7 @@
                  <div class="mt20">
                     <a class="kat" href="#" style="text-decoration: none;">
                         <h5 class="kat_title">Приборы для КИПиА </h5>
-                        <img class="kat_img" src="{% static 'img/product_image_6.jpg' %}" alt="КИПиА"
-                        style="width: 200px; height: 260px;">
+                        <img class="kat_img" src="{% static 'img/product_image_6.jpg' %}" alt="КИПиА">
                     </a>
                 </div>
                 <!---->
