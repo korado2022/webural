@@ -83,9 +83,9 @@ body {
 .mar-bot {
     padding-bottom: calc(50px + 30vw);
 }
-.baner {
+/* .baner {
     height: 266px;
-}
+} */
 
 .tel {
     white-space: nowrap;
@@ -292,6 +292,8 @@ body {
 .kat_img {
     margin: 20px;
     border-radius: 10px;
+    width: 200px;
+    height: 260px;
 }
 
 .kat_title {
@@ -345,6 +347,18 @@ body {
 .product_card:hover {
     box-shadow: 5px 5px 5px green;
     background-color: antiquewhite;
+}
+.product_card_img {
+    border-radius: 10px;
+    width: 320px;
+    height: 250px;
+}
+.product_card_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px 0 0 20px;
+    height: 115px;
 }
 
 .pc_title {
@@ -653,6 +667,13 @@ a.table-link {
     margin: 20px;
     border-radius: 20px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.contact {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
 .detail-card {
@@ -1346,7 +1367,7 @@ a.table-link {
         margin-top: 20px;
     }
     .kach {
-        margin-top: 100px;
+        margin-top: 120px;
     }
         
 }
@@ -1401,9 +1422,11 @@ a.table-link {
         width: 320px;
         margin-left: 10px;
     }
-    .prem-main__item {
+    /* .prem-main__item {
         width: 300px;
-    }
+        display: flex;
+        flex-direction: column;
+    } */
     .detail-card {
         flex-direction: column;
         margin-left: 10px;
@@ -1416,7 +1439,14 @@ a.table-link {
 		margin-top: 50px;
 	}
     .kach {
-        margin-top: 100px;
+        margin-top: 220px;
+    }
+    .features {
+        display: flex;
+        flex-direction: column;
+    }
+    .feature__item {
+        margin-bottom: 30px;
     }
 }
     
@@ -1424,6 +1454,12 @@ a.table-link {
 @media (max-width: 575px) {
     .container {
         width: 100%
+    }
+    .mar-bot {
+        padding-bottom: calc(30px + 25vw);
+    }
+    .kach {
+        margin-top: 220px;
     }
     
     .catalog_block {
@@ -1470,7 +1506,9 @@ a.table-link {
         flex-direction: column;
     }
     .kat_img {
-        display: none;
+        width: 150px;
+        height: 200px;
+        margin: 10px;
     }
     .footer_logo {
         font-size: 2rem;
@@ -1507,8 +1545,30 @@ a.table-link {
 	.advantages .items .item {
 		margin-top: 50px;
 	}
-    .kach {
-        margin-top: 100px;
+    .features {
+        display: flex;
+        flex-direction: column;
+    }
+    .feature__item {
+        margin-bottom: 30px;
+    }
+    .contact__img {
+        width: 280px;
+        margin-left: 10px;
+    }
+    .mt20 {
+        display: flex;
+        flex-direction: column;
+    }
+    .product_card {
+        width: 300px;
+        height: 360px;
+    }
+    .product_card_img {
+        width: 300px;
+    }
+    .product_card_text {
+        height: 90px;
     }
 }
    
