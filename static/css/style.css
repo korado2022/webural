@@ -1541,11 +1541,6 @@ a.table-link {
         width: 320px;
         margin-left: 10px;
     }
-    /* .prem-main__item {
-        width: 300px;
-        display: flex;
-        flex-direction: column;
-    } */
     .detail-card {
         flex-direction: column;
         margin-left: 10px;
@@ -1566,6 +1561,16 @@ a.table-link {
     }
     .feature__item {
         margin-bottom: 30px;
+    }
+    .product_card {
+        width: 300px;
+        height: 360px;
+    }
+    .product_card_img {
+        width: 300px;
+    }
+    .product_card_text {
+        height: 90px;
     }
 }
     
@@ -1686,7 +1691,7 @@ a.table-link {
         height: 360px;
     }
     .product_card_img {
-        width: 300px;
+        width: 280px;
     }
     .product_card_text {
         height: 90px;
