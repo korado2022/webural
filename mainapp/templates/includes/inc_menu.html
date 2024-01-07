@@ -1,42 +1,13 @@
 {# Блок меню #}
-{% comment %} <script>
-  window.onload=function() {
-    const burger = document.querySelector('.burger');
-    const menu = document.querySelector('.header__menu');
-    
-
-    burger.addEventListener('click', () => {
-      burger.classList.toggle('active');
-      memu.classList.toggle('open');
-    });
-  }
-  
-</script> {% endcomment %}
-{% comment %} <script>
-  window.onload=function() {
-      document.addEventListener("DOMContentLoaded", function () {
-      const menuButton = document.getElementById("menu-button");
-      const menuList = document.getElementById("menu-list");
-
-      menuButton.addEventListener("click", function () {
-          menuList.classList.toggle("show-menu");
-          menuButton.classList.toggle("cross-icon");
-      });
-  });
-  }
-</script> {% endcomment %}
 <script>
-  
       document.addEventListener("DOMContentLoaded", function () {
-      const menuButton = document.getElementById("menu-button");
-      const menuList = document.getElementById("menu-list");
-      const burger = document.querySelector('.burger');
+        const menuList = document.getElementById("menu-list");
+        const burger = document.querySelector('.burger');
 
-      menuButton.addEventListener("click", function () {
-          menuList.classList.toggle("show-menu");
-          menuButton.classList.toggle("cross-icon");
-          burger.classList.toggle('active');
-      });
+        burger.addEventListener("click", function () {
+            menuList.classList.toggle("show-menu");
+            burger.classList.toggle('active');
+        });
   });
 </script>
 {% load static %}
@@ -76,13 +47,7 @@
                     class="d-inline-block" style="text-align: center;">
                  <span class="title_menu">КОМПЛЕКСНАЯ<br> ПОСТАВКА<br> ОБОРУДОВАНИЯ КИПиА</span>
             </a>
-            <!---->
-            {% comment %} <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="menu-button">
-              <span class="navbar-toggler-icon"></span>
-            </button> {% endcomment %}
-            <!---->
-            <button class="burger" id="menu-button"></button>
+            <button class="burger"></button>
             <div class="collapse navbar-collapse nav-bar-menu" style="font-size: 1.2rem;">
                  <ul class="nav nav-underline me-auto mb-2 mb-lg-0 sm header__menu" id="menu-list">
                      
@@ -113,9 +78,6 @@
                         </a>
                     </button>
                 </div>
-                <!---->
-                
-                <!---->
             </div>
             
         </div>
