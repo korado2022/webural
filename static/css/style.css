@@ -1570,7 +1570,7 @@ a.table-link {
         width: 300px;
     }
     .product_card_text {
-        height: 90px;
+        height: 80px;
     }
 }
     
@@ -1691,10 +1691,10 @@ a.table-link {
         height: 360px;
     }
     .product_card_img {
-        width: 280px;
+        width: 300px;
     }
     .product_card_text {
-        height: 90px;
+        height: 80px;
     }
 }
    
