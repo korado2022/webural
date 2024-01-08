@@ -51,12 +51,45 @@ insertDataButton.addEventListener('click', (e) => {
 
             for (let key in cart) {
                 let row = document.createElement('tr');
+
                 let nameCell = document.createElement('td');
                 nameCell.innerText = key;
                 row.appendChild(nameCell);
 
                 let quantityCell = document.createElement('td');
-                quantityCell.innerText = cart[key];
+                // Добавляем поле ввода
+                let quantityInput = document.createElement('input');
+                quantityInput.type = 'number';
+                quantityInput.className = 'quant_input'
+                quantityInput.value = cart[key];
+                quantityInput.min = 1;
+                quantityInput.addEventListener('input', function () {
+                    updateCartItemQuantity(key, parseInt(quantityInput.value));
+                    showCart();
+                });
+                quantityCell.appendChild(quantityInput);
+
+                // // Добавляем кнопку "+"
+                // let incrementButton = document.createElement('button');
+                // incrementButton.innerText = '+';
+                // incrementButton.className = 'increment-btn';
+                // incrementButton.onclick = function () {
+                //     updateCartItemQuantity(key, cart[key] + 1);
+                //     showCart();
+                // };
+                // quantityCell.appendChild(incrementButton);
+
+                // // Добавляем кнопку "-"
+                // let decrementButton = document.createElement('button');
+                // decrementButton.innerText = '-';
+                // decrementButton.className = 'decrement-btn';
+                // decrementButton.onclick = function () {
+                //     if (cart[key] > 1) {
+                //         updateCartItemQuantity(key, cart[key] - 1);
+                //         showCart();
+                //     }
+                // };
+                // quantityCell.appendChild(decrementButton);
                 row.appendChild(quantityCell);
 
                 let deleteCell = document.createElement('td');
@@ -76,6 +109,11 @@ insertDataButton.addEventListener('click', (e) => {
             cartContent.style.display = 'block';
         }
 
+function updateCartItemQuantity(productName, newQuantity) {
+    cart[productName] = newQuantity;
+    localStorage.setItem('cart', JSON.stringify(cart));
+    updateCartNum();
+}
 // Функция скрытия корзины
         function hideCart() {
             let cartContent = document.getElementById('cartContent');

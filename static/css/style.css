@@ -757,6 +757,7 @@ a.table-link {
 .help_block {
     display: flex;
     flex-direction: row;
+    margin-left: 50px;
 }
 
 .block_help {
@@ -765,7 +766,9 @@ a.table-link {
 .table-link:hover {
     color: #009181;
 }
-
+.blok_form {
+    margin-left: 80px;
+}
 /* СТРАНИЦА Детальная товара */
 
 .feature-items-item-img {
@@ -1203,9 +1206,11 @@ a.table-link {
 /* Backet */
 .lock {
     overflow-y: hidden;
-  }
-
-  .cart {
+}
+.quant_input {
+    width: 100px;
+}
+.cart {
     width: 75px;
     height: 75px;
     border-radius: 10px;
@@ -1229,12 +1234,12 @@ a.table-link {
     padding: 15px;
     -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
             box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  .cart:hover {
+}
+.cart:hover {
     -webkit-transform: scale(1.1);
         -ms-transform: scale(1.1);
             transform: scale(1.1);
-  }
+}
 
 
 /* stop Basket */
@@ -1494,6 +1499,9 @@ a.table-link {
     .product_card_text {
         height: 80px;
     }
+    .blok_form {
+        margin-top: 30px;
+    }
 }
     
 /* вертикальный телефон */
@@ -1617,6 +1625,9 @@ a.table-link {
     }
     .product_card_text {
         height: 80px;
+    }
+    .blok_form {
+        margin-top: 30px;
     }
 }
    
