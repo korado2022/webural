@@ -1,15 +1,4 @@
 {# Блок меню #}
-<script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const menuList = document.getElementById("menu-list");
-        const burger = document.querySelector('.burger');
-
-        burger.addEventListener("click", function () {
-            menuList.classList.toggle("show-menu");
-            burger.classList.toggle('active');
-        });
-  });
-</script>
 {% load static %}
 
 <div class="">
@@ -26,9 +15,9 @@
                 г.Екатеринбург, ул. Вилонова, 45Е, офис 407
             </div>
             <div class="col d-flex flex-row justify-content-center align-items-center" id="cart">
-                <a href="#" style="text-decoration: none">
+                <a href="#" style="text-decoration: none" onclick="showCart()">
                     <img src="{% static 'img/cart_svg3.svg' %}" alt="basket" class="" width="40" height="40">
-                    <span class="basket_text" id="cart_num">0</span></a>
+                    <span class="basket_text" id="cart_num"></span></a>
             </div>
                        
         </div>
@@ -36,10 +25,6 @@
      <!-- КОНЕЦ Блока Topbar -->
 
      <!-- Блок меню-->
-     <!---->
-     
-      
-     <!---->
     <nav class="navbar navbar-expand-lg nav-med" id="nav_menu">
         <div class="container-fluid nav-med" style="background-color: #E96300;height: 90px;">
              <a class="navbar-brand brand_ural" href="{% url 'mainapp:index' %}">
@@ -88,41 +73,22 @@
 </div>
 <div class="feature__text kach" style="margin-left: 20px;">Гарантия качества, бесплатная доставка до терминала в Екатеринбурге</div>
 <!-- Basket -->
-<div class="popup">
-  
-    <div class="popup__container" id="popup_container">
-      <div class="popup__item">
-        <h1 class="popup__title">Оформление заказа</h1>
-      </div>
-
-      <div class="popup__item" id="popup_product_list">
-        <div class="popup__product">
-          <div class="popup__product-wrap">
-            <p class="popup__product-title">
-              Смартфон Apple IPhone 14 Pro Max 256Gb, золотой
-            </p>
-          </div>
-          <div class="popup__product-wrap">
-            <div class="popup__product-quantity">1</div>
-            <button class="popup__product-delete">✖</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="popup__item">
-        <div class="popup__cost">
-          <button class="popup__clear" id="popup_clear">Очистить</button>
-          
-          <div class="popup__cost">
-            <h2 class="popup__cost-title">Итого</h2>
-            <output class="popup__cost-value" id="popup_cost">1</output>
-          </div>
-          
-        </div>
-      </div>
-      <button class="popup__close" id="popup_close">✖</button>
-    </div>
-  </div>
+<div class="cart-content" id="cartContent">
+  <span class="close-btn" onclick="hideCart()">✖</span>
+  <table>
+      <thead style="margin-top: 20px;">
+          <tr>
+              <th>Наименование</th>
+              <th>Количество</th>
+              <th>Удалить</th>
+          </tr>
+      </thead>
+      <tbody id="cartTableBody">
+          <!-- Содержимое корзины будет добавляться с помощью JavaScript -->
+      </tbody>
+  </table>
+  <button class="clear-btn" onclick="clearCart()">Очистить</button>
+</div>
 <!-- Stop Basket -->
 
 <!-- Блок Баннер-->
@@ -135,7 +101,6 @@
             <img src="{% static 'img/photo/Image5.png' %}" id="image_5" width="100%" style="opacity: 0; filter: alpha(opacity=0); position: absolute;">
             <img src="{% static 'img/photo/Image6.png' %}" id="image_6" width="100%" style="opacity: 0; filter: alpha(opacity=0); position: absolute;">
             <img src="{% static 'img/photo/Image7.png' %}" id="image_7" width="100%" style="opacity: 0; filter: alpha(opacity=0); position: absolute;">
-           
         </div>
 </div>
 

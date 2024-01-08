@@ -231,3 +231,8 @@ cart.addEventListener("click", (e) => {
 });
 
 
+const burger = document.querySelector('.burger');
+
+burger.addEventListener('click', () => {
+  burger.classList.toggle('active');
+});
