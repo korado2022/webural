@@ -1,0 +1,27 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+{% block content %}
+
+
+
+    <div class="container">
+        <h2>Спасибо за ваше обращение!</h2>
+        
+
+        {{ text }}
+
+        {% if form.errors %}
+            <div class="alert alert-danger">
+                <strong>Ошибки:</strong>
+                <ul>
+                    {% for error in form.errors %}
+                    <li>{{ error }}</li>
+                    {% endfor %}
+                </ul>
+
+            </div>
+        {% endif %}
+    </div>
+
+
+    {% endblock %}

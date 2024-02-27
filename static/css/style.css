@@ -15,6 +15,12 @@ body {
     line-height: 1;
     background: #E96300;
 }
+.marqu {
+    position: relative;
+    top: 100px;
+    color: green;
+    font-size: 2em;
+}
 :root {
     --ui-font-family-open-sans: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
@@ -511,7 +517,7 @@ body {
     flex-direction: row;
 }
 .items.list {
-    display: block;
+    /* display: block; */
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     border-radius: 20px;
 }
@@ -652,7 +658,7 @@ td {
 }
 .product-item-list .information .name {
     width: 65%;
-    max-height: 48px;
+ 
     overflow: hidden;
     color: #E96300;
 }
@@ -1105,6 +1111,13 @@ a.table-link {
   }
 /**/
 /*Block Hellp*/
+.error {
+    color: red;
+    font-size: 90%;
+}
+:invalid {
+    border-color: red;
+  }
 .filter.licence_block {
     padding: 0px 0px 20px;
     position: relative;
@@ -1423,6 +1436,9 @@ a.table-link {
     .container {
         width: 540px
     }
+    .marqu {
+        top: 60px;
+    }
     .collapse:not(.show) {
         display: flex;
         flex-direction: column;
@@ -1532,6 +1548,7 @@ a.table-link {
     }
     .help_block {
         flex-direction: column;
+        margin-left: 25px;
     }
     .z2 {
         display: none;
@@ -1628,6 +1645,15 @@ a.table-link {
     }
     .blok_form {
         margin-top: 30px;
+    }
+    .title_page {
+        padding-left: 25px;
+    }
+    .l_c {
+        padding-left: 25px;
+    }
+    .marqu {
+        top: 30px;
     }
 }
    

@@ -51,29 +51,38 @@
            
         </div>
         <div class="blok_form">
-            <form class="row g-3">
+            <form class="row g-3 form" name="contactForm" onsubmit="return validateForm()" 
+                method="post" action="{% url 'mainapp:success' %}">
+                {% csrf_token %}
+                {{ form.as_p }}
                 <div class="col-md-6 text_w">
-                    <label for="inputFullName" class="form-label">ФИО</label>
-                    <input type="password" class="form-control form-control-lg" id="inputFullName" placeholder="Иванов Иван Иванович">
+                    <label for="inputName" class="form-label">ФИО</label>
+                    <input type="text" name="name" class="form-control form-control-lg" id="inputName" 
+                    placeholder="Иванов Иван Иванович" required>
+                    <div class="error" id="nameErr"></div>
                   </div>
                 <div class="col-md-6 text_w">
                   <label for="inputEmail4" class="form-label">Эл. адрес</label>
-                  <input type="email" class="form-control form-control-lg" id="inputEmail4" placeholder="name@example.com">
+                  <input type="email" name="email" class="form-control form-control-lg" id="inputEmail4" 
+                  placeholder="name@example.com" required>
+                  <div class="error" id="emailErr"></div>
                 </div>
                 
                 <div class="col-md-6 text_w">
                   <label for="inputPhone" class="form-label">Телефон</label>
-                  <input type="phone" class="form-control form-control-lg" id="inputPhone" placeholder="+79991234567">
+                  <input type="phone" name="phone" class="form-control form-control-lg" 
+                  maxlength="12" id="inputPhone" placeholder="+79991234567">
+                  <div class="error" id="mobileErr"></div>
                 </div>
                 <div class="col-md-6 text_w">
                   <label for="inputCompany" class="form-label">Компания</label>
-                  <input type="text" class="form-control form-control-lg" id="inputCompany" 
+                  <input type="text" name="company" class="form-control form-control-lg" id="inputCompany" 
                   placeholder="Укажите название Вашей компании">
                 </div>
                 <div class="col-12 text_w">
                     <label for="inputMessage" class="form-label">Сообщение</label>
                     <textarea class="form-control form-control-lg" placeholder="Напишите Ваше сообщение здесь" 
-                    id="inputMessage" style="height: 100px"></textarea>
+                    id="inputMessage" name="message" style="height: 100px" required></textarea>
                     
                 </div>
                 <button class="pc_btn pc_btn_wi" id="insertDataButton" style="border: none">Вставить данные из корзины</button>

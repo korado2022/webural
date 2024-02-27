@@ -42,11 +42,11 @@
                      </li>
                      <li class="nav-item">
                          <a class="nav-link {% if menu_name == 'catalog' %}active{% endif %}" 
-                         aria-current="page" href="{% url 'mainapp:catalog-card' %}">Предлагаем</a>
+                         aria-current="page" href="/catalog/izgotovlenie-trubnoj-armatury-dlya-kipia/">Предлагаем</a>
                      </li>
                      <li class="nav-item">
-                      <a class="nav-link {% if menu_name == 'catalog' %}active{% endif %}" 
-                      aria-current="page" href="{% url 'mainapp:catalog-descript' %}">Продукция</a>
+                      <a class="nav-link {% if menu_name == 'products' %}active{% endif %}" 
+                      aria-current="page" href="{% url 'mainapp:working' %}">Продукция</a>
                     </li>
                      
                      <li class="nav-item">
@@ -102,6 +102,9 @@
             <img src="{% static 'img/photo/Image6.png' %}" id="image_6" width="100%" style="opacity: 0; filter: alpha(opacity=0); position: absolute;">
             <img src="{% static 'img/photo/Image7.png' %}" id="image_7" width="100%" style="opacity: 0; filter: alpha(opacity=0); position: absolute;">
         </div>
+        <marquee class="marqu">Компания «УралКИП» Комплексная поставка оборудования КИПиА.  
+            Поставляем как собственную продукцию так и изделия компаний-партнёров: НКУ, шкафы и 
+            пульты управления, шкафы контроллеров, сборки РТЗО, стенды датчиков.</marquee>
 </div>
 
 <!-- КОНЕЦ Блок Баннер-->

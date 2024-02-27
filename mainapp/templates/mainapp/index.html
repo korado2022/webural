@@ -54,7 +54,8 @@
 
             
             <div class="col-lg-4 prem-main-card">
-                <a href="{% url 'mainapp:catalog-card' %}#catalog-product" class="prem-main-a" >
+                
+                <a href="{{ categories.0.get_absolute_url }}" class="prem-main-a" >
                     <div class="prem-main__item">
                         <div class="prem-main__img">
                             <img src="{% static 'img/klapan-arm.svg' %}" style="width: 60px; height: 60px;" 
@@ -67,7 +68,7 @@
             </div>
 
             <div class="col-lg-4 prem-main-card">
-                <a href="#" class="prem-main-a">
+                <a href="{{ categories.1.get_absolute_url }}" class="prem-main-a">
                     <div class="prem-main__item">
                         <div class="prem-main__img">
                             <img src="{% static 'img/pipe_2.svg' %}" 
@@ -84,7 +85,7 @@
 
             
             <div class="col-lg-4 prem-main-card">
-                <a href="#" class="prem-main-a">
+                <a href="{{ categories.2.get_absolute_url }}" class="prem-main-a">
                     <div class="prem-main__item">
                         <div class="prem-main__img">
                             <img src="{% static 'img/pipe.svg' %}" alt="Изготовление стендов датчиков КИПиА" 
@@ -97,7 +98,7 @@
             </div>
 
             <div class="col-lg-4 prem-main-card">
-                <a href="#" class="prem-main-a">
+                <a href="{{ categories.3.get_absolute_url }}" class="prem-main-a">
                     <div class="prem-main__item">
                         <div class="prem-main__img">
                             <img src="{% static 'img/kipia.svg' %}" 
@@ -113,20 +114,20 @@
             </div>
 
             <div class="col-lg-4 prem-main-card">
-                <a href="#" class="prem-main-a">
+                <a href="{{ categories.4.get_absolute_url }}" class="prem-main-a">
                     <div class="prem-main__item">
                         <div class="prem-main__img">
                             <img src="{% static 'img/truba_mont.svg' %}" alt="Труба для монтажа КИПиА и её крепёжные элемены"
                             style="width: 60px; height: 60px;">
                         </div>
-                        <div class="services-main__title">Труба для монтажа КИПиА и её крепёжные элемены</div>
+                        <div class="services-main__title">Труба для монтажа КИПиА и её крепёжные элементы</div>
 
                     </div>
                 </a>
             </div>
 
             <div class="col-lg-4 prem-main-card">
-                <a href="#" class="prem-main-a">
+                <a href="{{ categories.5.get_absolute_url }}" class="prem-main-a">
                     <div class="prem-main__item">
                         <div class="prem-main__img">
                             <img src="{% static 'img/electric_panel.svg' %}" alt="Эл. Шкафы и шкафы систем автоматизации КИПиА"

@@ -1,4 +1,5 @@
 from django.urls import path
+from django.urls import re_path
 
 from mainapp import views
 from mainapp.apps import MainappConfig
@@ -7,8 +8,10 @@ app_name = MainappConfig.name
 
 urlpatterns = [
     path("", views.MainPageView.as_view(), name="index"),
-    path("catalog/", views.CatalogPageView.as_view(), name="catalog"),
-    path("catalog-card/", views.CatalogCardPageView.as_view(), name="catalog-card"),
+    path("catalog/<slug:slug>/", views.CatalogPageView.as_view(), name="catalog"),
+    # re_path(r'(?P<slug>.*)/', views.GroupPageView.as_view(), name='group'),
+    path("group/<slug:slug>/", views.GroupPageView.as_view(), name="group"),
+    path("subgroup/<slug:slug>/", views.SubgroupPageView.as_view(), name="subgroup"),
     path("catalog-card/bobyshki", views.CatalogCardBobyshkiPageView.as_view(), name="catalog-card-bobyshki"),
     path("catalog-card/bobyshki/BN01/", views.BobyshkiTablePageView.as_view(), name="bobyshki-table"),
     path("catalog-card/bobyshki/BN01/product-detail/", views.ProductDetailPageView.as_view(), name="product-detail"),
@@ -23,5 +26,7 @@ urlpatterns = [
     path("proektirovanie-kip/", views.DesignKipPageView.as_view(), name="proektirovanie-kip"),
     path("privacy/", views.PrivacyPageView.as_view(), name="privacy"),
     path("kipa/", views.KipaPageView.as_view(), name="kipa"),
+    path("working/", views.WorkingPageView.as_view(), name="working"),
     path("detail_exam/", views.DetailexamPageView.as_view(), name="detail_exam"),
+    path("success/", views.SuccessPageView.as_view(), name="success"),
 ]
