@@ -63,6 +63,16 @@ class SubgroupPageView(TemplateView):
         # print(context["subgroups"])
         return context
 
+class ServicePageView(TemplateView):
+    template_name = "mainapp/service.html"
+
+    def get_context_data(self, pk=None, **kwargs):
+        context = super().get_context_data(**kwargs)
+        ps = pk
+        context["groups_category"] = Group.objects.all().filter(category=ps)
+        context["menu_name"] = "service"
+        context["left_menu"] = ps
+        return context
 
 
 

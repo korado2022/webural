@@ -1,0 +1,99 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+
+
+{% block title %}{{ title_name }}{% endblock %}
+{% block content %}
+
+
+    <!-- Block search-->
+    <div class="container">
+        <form class="d-flex" role="search" method="GET" action="#">
+          <input class="form-control me-2" name="q" type="search" placeholder="Поиск" aria-label="Поиск">
+          <button class="btn btn-outline-success" type="submit" href="">Поиск</button>
+        </form>
+    </div>
+    <!-- End Block search-->
+    <!-- Блок Каталог -->
+    <div class="container">
+        {% if left_menu == 5 %}
+        <h1 class="title_page">Типовые и нестандартные изделия трубопроводов КИПиА</h1>
+        {% endif %}
+        {% if left_menu == 6 %}
+        <h1 class="title_page">Запорная арматура</h1>
+        {% endif %}
+        {% if left_menu == 7 %}
+        <h1 class="title_page">Стенды датчиков КИПиА</h1>
+        {% endif %}
+        {% if left_menu == 8 %}
+        <h1 class="title_page">Приборы для КИПиА</h1>
+        {% endif %}
+        {% if left_menu == 9 %}
+        <h1 class="title_page">Трубы для КИПиА</h1>
+        {% endif %}
+        {% if left_menu == 10 %}
+        <h1 class="title_page">Электро техническая продукция</h1>
+        {% endif %}
+
+    </div>
+   
+    <div class="container catalog_block" style="margin-top: 50px">
+        
+        <!--Левая колонка-->
+        <div class="col-md-3 l_c" style="background: #E96300;color: white;">
+            <h2 style="margin-top: 20px;" id="catalog-product">Каталог</h2>
+            <ul class="list-group">
+                <li class="list-group-item {% if left_menu == 5 %}activ{% endif %}"> 
+                    <a href="{% url 'mainapp:service' pk=5 %}">
+                    Типовые и нестандартные изделия трубопроводов КИПиА</a> </li>
+                <li class="list-group-item {% if left_menu == 6 %}activ{% endif %}"> 
+                    <a href="{% url 'mainapp:service' pk=6 %}">Запорная арматура</a> </li>
+                <li class="list-group-item {% if left_menu == 7 %}activ{% endif %}"> 
+                    <a href="{% url 'mainapp:service' pk=7 %}">Стенды датчиков КИПиА</a> </li>
+                <li class="list-group-item {% if left_menu == 8 %}activ{% endif %}"> 
+                    <a href="{% url 'mainapp:service' pk=8 %}">Приборы для КИПиА</a> </li>
+                <li class="list-group-item {% if left_menu == 9 %}activ{% endif %}"> 
+                    <a href="{% url 'mainapp:service' pk=9 %}">Трубы для КИПиА</a> </li>
+                <li class="list-group-item {% if left_menu == 10 %}activ{% endif %}"> 
+                    <a href="{% url 'mainapp:service' pk=10 %}">Электро техническая продукция</a> </li>
+                
+            </ul>
+        </div>
+        <!--КОНЕЦ Левая колонка-->
+      
+           
+        <!-- Table-->
+        <div class="col-md-9 d-flex flex-column" style="margin-bottom: 30px;">
+            {% for group in groups_category %}
+            <!-- Карточка описание-->
+            <div class="detail-card d-flex flex-column" style="margin-bottom: 30px;">
+                <!--Descript card-->
+                <div class="description text_orange" style="font-size: 1rem;">
+                    <h4>{{ group.name }}</h4>
+                    <p>{{ group.text | safe }}</p>
+                    <br>
+                    
+                </div>
+                <div class="" style="margin: 0 0 50px 50px;">
+                    <a class="pc_btn pc_btn_oran" href="{{ group.get_absolute_url }}" 
+                    role="button" style="">Подробнее</a>
+                </div>
+                <!-- End Descript card-->
+            </div>
+            <!-- КОНЕЦ Карточка описание-->
+            {% endfor %}
+            
+        </div>
+
+        
+       
+    </div>
+    <!-- КОНЕЦ Блок Каталог -->
+   
+    {% block help %}
+    {% include 'includes/inc_help.html' %}
+    {% endblock %}
+
+    
+    
+    {% endblock %}
