@@ -145,3 +145,15 @@ MEDIA_ROOT = BASE_DIR / 'media'
 
 CKEDITOR_UPLOAD_PREFIX = '/media/uploads/'
 CKEDITOR_UPLOAD_PATH = 'uploads/'
+
+# Настройки для отправки электронных писем через mail.ru
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.mail.ru'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'mytest24@mail.ru'  # Ваш электронный адрес на mail.ru
+EMAIL_HOST_PASSWORD = 'aldfgw;iufg9y876fyft87ftffg'  # Пароль от вашего электронного адреса на mail.ru
+DEFAULT_FROM_EMAIL = 'mytest24@mail.ru'  # Замените на свой адрес
+RECIPIENTS_EMAIL = ['korado_29@mail.ru']
+
+

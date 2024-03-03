@@ -9,6 +9,7 @@ app_name = MainappConfig.name
 urlpatterns = [
     path("", views.MainPageView.as_view(), name="index"),
     path("catalog/<slug:slug>/", views.CatalogPageView.as_view(), name="catalog"),
+    path("service/<int:pk>/", views.ServicePageView.as_view(), name="service"),
     # re_path(r'(?P<slug>.*)/', views.GroupPageView.as_view(), name='group'),
     path("group/<slug:slug>/", views.GroupPageView.as_view(), name="group"),
     path("subgroup/<slug:slug>/", views.SubgroupPageView.as_view(), name="subgroup"),
