@@ -82,6 +82,12 @@ class WorkingPageView(TemplateView):
 class ContactPageView(TemplateView):
     template_name = "mainapp/contacts.html"
 
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+
+        context["menu_name"] = "contacts"
+        return context
+
 
 # остальное
 
