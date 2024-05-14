@@ -530,6 +530,7 @@ body {
     flex-wrap: wrap;
     margin: 0 0 20px 20px;
 }
+
 .product-item-list {
     padding: 28px 3.4% 28px;
     display: block;
@@ -574,6 +575,9 @@ body {
     top: 55px;
     background: #FFF;
     z-index: 5;
+}
+.tab-product-table {
+    width: 100%;
 }
 #tab-product-description table, .tab-product-description table {
     min-width: 100%;

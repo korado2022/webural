@@ -88,7 +88,7 @@
                                         data-id="4120">В корзину</button>
                                     </td>
                                     <td><p align="center"><a hreflang="ru" class="table-link" 
-                                        href="{% url 'mainapp:product-detail' %}">Подробнее &gt;</a></p></td>
+                                       href=""></a></p></td>
                                 </tr>
                                 {% endfor %}
                                 
@@ -97,240 +97,37 @@
     
                     </div>	
                     <div class="overflowx mobile">
+                        {% for product in products %}
                         <table cellpadding="0" border="0" class="tab-product-table-item">
                             <tbody>
                                 <tr class="two-colums">
                                     <td>Наименование</td>
                                     <td>
                                         <p><a hreflang="ru" class="table-link" href="#">
-                                            БП01-М12*1,5-30 ст.20</a></p>
+                                            {{ product.name }}</a></p>
                                     </td>
                                 </tr>
                                 <tr></tr>
                                 <tr class="two-colums">
-                                    <td>Материал</td>
-                                    <td>сталь 20</td>
-                                </tr>
-                                <tr></tr>
-                                <tr class="two-colums">
-                                    <td>D внеш., мм</td>
-                                    <td>22</td>
-                                </tr>
-                                <tr></tr>
-                                <tr class="two-colums">
-                                    <td>Длина, L- мм</td>
-                                    <td>30</td>
-                                </tr>
-                                <tr></tr>
-                                <tr class="two-colums">
+                                    <td>В корзину</td>
                                     <td>
-                                        <button class="card__add pc_btn2 pc_btn_wi"
-                                        data-name="БП01-М12*1,5-30 ст.20"
+                                        <button class="card__add pc_btn2 pc_btn_oran"
+                                        data-name="{{ product.name }}"
                                         data-id="4536">В корзину</button>
                                     </td>
+                                </tr>
+                                <tr></tr>
+                                <tr class="two-colums">
+                                    <td>Детали</td>
                                     <td>
-                                        <p><a hreflang="ru" class="table-link" href="#">Подробнее &gt;</a></p>
+                                        <p><a hreflang="ru" class="table-link" href="#"></a></p>
                                     </td>
                                 </tr>
                                 <tr></tr>
                             </tbody>
-                        </table>	
-                        <table cellpadding="0" border="0" class="tab-product-table-item">
-                            <tbody>
-                                <tr class="two-colums">
-                                    <td>Наименование</td>
-                                    <td>
-                                        <p><a hreflang="ru" class="table-link" href="#">
-                                            БП01-М12*1,5-30 ст.08х18н10 (нерж.сталь)</a></p>
-                                    </td>
-                                </tr>
-                                <tr></tr>
-                                <tr class="two-colums">
-                                    <td>Материал</td>
-                                    <td>сталь 08х18н10</td>
-                                </tr>
-                                <tr></tr>
-                                <tr class="two-colums">
-                                    <td>D внеш., мм</td>
-                                    <td>22</td>
-                                </tr>
-                                <tr></tr><tr class="two-colums">
-                                    <td>Длина, L- мм</td>
-                                    <td>30</td>
-                                </tr>
-                                <tr></tr>
-                                <tr class="two-colums">
-                                    <td>
-                                        <button class="card__add pc_btn2 pc_btn_wi"
-                                        data-name="БП01-М12*1,5-30 ст.08х18н10 (нерж.сталь)"  
-                                        data-id="4537">В корзину</button>
-                                    </td>
-                                    <td>
-                                        <p><a hreflang="ru" class="table-link" href="#">Подробнее &gt;</a></p>
-                                    </td>
-                                </tr>
-                                <tr></tr>
-                            </tbody>
-                        </table>	
-                        <table cellpadding="0" border="0" class="tab-product-table-item">
-                            <tbody>
-                                <tr class="two-colums">
-                                    <td>Наименование</td>
-                                    <td>
-                                        <p><a hreflang="ru" class="table-link" href="#">
-                                            БП01-М12*1,5-50 ст.20</a></p>
-                                    </td>
-                                </tr>
-                                <tr></tr>
-                                <tr class="two-colums">
-                                    <td>Материал</td>
-                                    <td>сталь 20</td>
-                                </tr>
-                                <tr></tr>
-                                <tr class="two-colums">
-                                    <td>D внеш., мм</td>
-                                    <td>22</td>
-                                </tr>
-                                <tr></tr>
-                                <tr class="two-colums">
-                                    <td>Длина, L- мм</td>
-                                    <td>50</td>
-                                </tr>
-                                <tr></tr>
-                                
-                                <tr class="two-colums">
-                                    <td>
-                                        <button class="card__add pc_btn2 pc_btn_wi"  
-                                        data-name="БП01-М12*1,5-50 ст.20"
-                                        data-id="4538">В корзину</button>
-                                    </td>
-                                    <td>
-                                        <p><a hreflang="ru" class="table-link" href="#">Подробнее &gt;</a></p>
-                                    </td>
-                                </tr>
-                                <tr></tr>
-                            </tbody>
-                        </table>	
-                        <table cellpadding="0" border="0" class="tab-product-table-item">
-                            <tbody>
-                                <tr class="two-colums">
-                                    <td>Наименование</td>
-                                    <td>
-                                        <p><a hreflang="ru" class="table-link" 
-                                            href="#">БП01-М12*1,5-50 ст.08х18н10 (нерж.сталь)</a></p>
-                                    </td>
-                                </tr>
-                                <tr></tr>
-                                <tr class="two-colums">
-                                    <td>Материал</td>
-                                    <td>сталь 08х18н10</td>
-                                </tr>
-                                <tr></tr>
-                                <tr class="two-colums">
-                                    <td>D внеш., мм</td>
-                                    <td>22</td>
-                                </tr>
-                                <tr></tr>
-                                <tr class="two-colums">
-                                    <td>Длина, L- мм</td>
-                                    <td>50</td>
-                                </tr>
-                                <tr></tr>
-                                
-                                <tr class="two-colums">
-                                    <td>
-                                        <button class="card__add pc_btn2 pc_btn_wi"
-                                        data-name="БП01-М12*1,5-50 ст.08х18н10 (нерж.сталь)"  
-                                        data-id="4539">В корзину</button>
-                                    </td>
-                                    <td>
-                                        <p><a hreflang="ru" class="table-link" href="#">Подробнее &gt;</a></p>
-                                    </td>
-                                </tr>
-                                <tr></tr>
-                            </tbody>
-                        </table>	
-                        <table cellpadding="0" border="0" class="tab-product-table-item">
-                            <tbody>
-                                <tr class="two-colums">
-                                    <td>Наименование</td>
-                                    <td>
-                                        <p><a hreflang="ru" class="table-link" 
-                                            href="#">БП01-М12*1,5-100 ст.20</a></p>
-                                    </td>
-                                </tr>
-                                <tr></tr>
-                                <tr class="two-colums">
-                                    <td>Материал</td>
-                                    <td>сталь 20</td>
-                                </tr>
-                                <tr></tr>
-                                <tr class="two-colums">
-                                    <td>D внеш., мм</td>
-                                    <td>22</td>
-                                </tr>
-                                <tr></tr>
-                                <tr class="two-colums">
-                                    <td>Длина, L- мм</td>
-                                    <td>100</td>
-                                </tr>
-                                <tr></tr>
-                                <tr class="two-colums">
-                                    <td>
-                                        <button class="card__add pc_btn2 pc_btn_wi"
-                                        data-name="БП01-М12*1,5-100 ст.20"  
-                                        data-id="4540">В корзину</button>
-                                    </td>
-                                    <td>
-                                        <p><a hreflang="ru" class="table-link" href="#">Подробнее &gt;</a></p>
-                                    </td>
-                                </tr>
-                                <tr></tr>
-                            </tbody>
-                        </table>	
-                        <table cellpadding="0" border="0" class="tab-product-table-item">
-                            <tbody>
-                                <tr class="two-colums">
-                                    <td>Наименование</td>
-                                    <td>
-                                        <p><a hreflang="ru" class="table-link" 
-                                            href="#">БП01-М12*1,5-100 ст.08х18н10 (нерж.сталь)</a></p>
-                                    </td>
-                                </tr>
-                                <tr></tr>
-                                <tr class="two-colums">
-                                    <td>Материал</td>
-                                    <td>сталь 08х18н10</td>
-                                </tr>
-                                <tr></tr>
-                                <tr class="two-colums">
-                                    <td>D внеш., мм</td>
-                                    <td>22</td>
-                                </tr>
-                                <tr></tr>
-                                <tr class="two-colums">
-                                    <td>Длина, L- мм</td>
-                                    <td>100</td>
-                                </tr>
-                                <tr></tr>
-                                <tr class="two-colums">
-                                    <td>Цена, с НДС</td>
-                                    <td>605</td>
-                                </tr>
-                                <tr></tr>
-                                <tr class="two-colums">
-                                    <td>
-                                        <button class="card__add pc_btn2 pc_btn_wi"
-                                        data-name="БП01-М12*1,5-100 ст.08х18н10 (нерж.сталь)" 
-                                        data-id="4541">В корзину</button>
-                                    </td>
-                                    <td>
-                                        <p><a hreflang="ru" class="table-link" href="#">Подробнее &gt;</a></p>
-                                    </td>
-                                </tr>
-                                <tr></tr>
-                            </tbody>
-                        </table>	
+                        </table>
+                        {% endfor %}	
+                        
                     </div>		
                 </div>
                 	
