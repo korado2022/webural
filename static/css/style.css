@@ -2,12 +2,12 @@
 
 /* БАЗОВЫЕ */
 
-* { 
+* {
     margin: 0;
-    padding: 0; 
+    padding: 0;
 }
 
-body { 
+body {
     width: 100%;
     font-family: 'Onest', sans-serif;
     font-size: 16px;
@@ -59,7 +59,7 @@ body {
     color: #FFF;
 }
 
-.nav>li>a:focus, 
+.nav>li>a:focus,
 .nav>li>a:hover{
   color: #009181;
 }
@@ -161,7 +161,7 @@ body {
         bottom: 11px;
         transform: rotate(-45deg);
         transition: bottom .3s, transform .3s .15s;
-    } 
+    }
 }
 /* mobile-menu */
 /* End Меню */
@@ -475,16 +475,27 @@ body {
 }
 
 .pc_btn_oran {
-    background: #E96300; 
+    background: #E96300;
     color: white;
 }
 
 .pc_btn_wi {
-    background: white; 
+    background: white;
     color: #E96300;
     border-color: white;
 }
 /*Catalog block*/
+.crumb a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+.crumb a:hover {
+  color: #008000;
+  text-decoration: underline;
+}
+.crumb span {
+  margin: 0 10px;
+}
 .catalog_block {
     display: flex;
 }
@@ -494,7 +505,7 @@ body {
 }
 
 .title_page {
-    color: white;
+    color: #ffffff;
     margin-top: 50px;
 }
 /*Stop Catalog block*/
@@ -662,7 +673,7 @@ td {
 }
 .product-item-list .information .name {
     width: 65%;
- 
+
     overflow: hidden;
     color: #E96300;
 }
@@ -743,7 +754,7 @@ a.table-link {
     color: #E96300;
 }
 
-.l_c > ul li a:hover {   
+.l_c > ul li a:hover {
     color: green;
     font-weight: bold;
 }
@@ -844,7 +855,7 @@ a.table-link {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    
+
 }
 
 .prem-main__item {
@@ -854,7 +865,7 @@ a.table-link {
     padding: 30px 25px;
     height: 100%;
     width: 360px;
-    
+
 }
 .nohref {
     color: #E96300;
@@ -893,7 +904,7 @@ a.table-link {
     text-decoration: underline;
     font-weight: bold;
     color: #FFF;
-    
+
 }
 
 .prem-main__item:hover {
@@ -1050,7 +1061,7 @@ a.table-link {
     --marquee-element-width: calc(var(--marquee-width) / var(--marquee-elements-displayed));
     --marquee-animation-duration: calc(var(--marquee-elements) * 3s);
   }
-  
+
   .marquee {
     width: var(--marquee-width);
     height: var(--marquee-height);
@@ -1095,12 +1106,12 @@ a.table-link {
     font-size: calc(var(--marquee-height)*3/4); /* 5rem; */
     white-space: nowrap;
   }
-  
+
   .marquee-content li img {
     width: 100%;
     border: 2px solid #E96300;
   }
-  
+
   @media (max-width: 600px) {
     html { font-size: 12px; }
     :root {
@@ -1152,7 +1163,7 @@ a.table-link {
 
 .label_block {
     display: block;
-    
+
 }
 
 .licence_a {
@@ -1236,7 +1247,7 @@ a.table-link {
     -o-transition: 0.1s;
     transition: 0.1s;
     /* cursor: pointer; */
-    
+
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1282,8 +1293,8 @@ a.table-link {
 .feature__item {
     display: inline-block;
     vertical-align: middle;
-    width: calc(100% / 3);
     color: #FFF;
+    margin-right: 50px;
 }
 .feature__img {
     display: inline-block;
@@ -1302,7 +1313,6 @@ a.table-link {
     vertical-align: middle;
     font-size: 1.2rem;
     color: #fff;
-    /* font-weight: 300; */
     line-height: 1.4;
     text-align: left;
 }
@@ -1370,11 +1380,11 @@ a.table-link {
         display: flex;
         flex-direction: column;
     }
-   
+
     .nav-med {
      display: block;
     }
- 
+
     .head-tlf {
         margin-left: 50px;
     }
@@ -1389,15 +1399,15 @@ a.table-link {
         margin-left: 10px;
         margin-top: 20px;
     }
-  
+
 }
-    
+
 /* вертикальный планшет */
 @media (max-width: 991px) {
     .container {
         width: 720px
     }
-   
+
     .about_block {
         flex-direction: column;
     }
@@ -1432,7 +1442,7 @@ a.table-link {
     .kach {
         margin-top: 120px;
     }
-        
+
 }
 
 /* горизонтальный телефон*/
@@ -1456,14 +1466,14 @@ a.table-link {
     }
     .nav-bar-menu {
         margin-bottom: 30px;
- 
+
     }
     .head-tlf {
         margin-left: 50px;
     }
     .about_bott {
         margin-bottom: 500px;
-    } 
+    }
     .help_block {
         flex-direction: column;
     }
@@ -1523,7 +1533,7 @@ a.table-link {
         margin-top: 30px;
     }
 }
-    
+
 /* вертикальный телефон */
 @media (max-width: 575px) {
     .container {
@@ -1535,7 +1545,7 @@ a.table-link {
     .kach {
         margin-top: 220px;
     }
-    
+
     .catalog_block {
         display: flex;
         flex-direction: column;
@@ -1614,7 +1624,7 @@ a.table-link {
     .prem-main__item {
         width: 300px;
     }
- 
+
 	.advantages .items {
 		flex-wrap: wrap;
 	}
@@ -1624,10 +1634,15 @@ a.table-link {
     .features {
         display: flex;
         flex-direction: column;
-        margin-left: 100px;
+        margin-left: 10px;
     }
     .feature__item {
+        display: flex;
+        flex-direction: row;
         margin-bottom: 30px;
+    }
+    .feature__img {
+        margin-right: 15px;
     }
     .contact__img {
         width: 280px;
@@ -1660,5 +1675,5 @@ a.table-link {
         top: 30px;
     }
 }
-   
+
 /* Медиа */

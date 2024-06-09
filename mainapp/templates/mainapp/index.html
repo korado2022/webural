@@ -52,98 +52,27 @@
                 
             </div>
             <!---->
-         
+        {% if categories %} 
         <div class="prem-main">
 
-            
-            <div class="col-lg-4 prem-main-card">
-                
-                <a href="{{ categories.0.get_absolute_url }}" class="prem-main-a" >
+            {% for category in categories %}
+            <div class="col-lg-4 prem-main-card">   
+                <a href="{{ category.get_absolute_url }}" class="prem-main-a" >
                     <div class="prem-main__item">
                         <div class="prem-main__img">
-                            <img src="{% static 'img/klapan-arm.svg' %}" style="width: 60px; height: 60px;" 
-                            alt="Изготовление трубопроводной арматуры для КИПиА">
+                            <img src="{{ category.url_img }}" style="width: 60px; height: 60px;" 
+                            alt="{{ category.name }}">
                         </div>
-                        <div class="services-main__title">Изготовление трубопроводной арматуры для КИПиА</div>
+                        <div class="services-main__title">{{ category.name }}</div>
 
                     </div>
                 </a>
             </div>
-
-            <div class="col-lg-4 prem-main-card">
-                <a href="{{ categories.1.get_absolute_url }}" class="prem-main-a">
-                    <div class="prem-main__item">
-                        <div class="prem-main__img">
-                            <img src="{% static 'img/pipe_2.svg' %}" 
-                            alt="Запорные, регулирующие клапаны. Игольчатые, 
-                            сальниковые вентили, шаровые краны, стальные фланцы и др." 
-                            style="width: 60px; height: 60px;">
-                        </div>
-                        <div class="services-main__title">Запорные, регулирующие клапаны. Игольчатые, 
-                            сальниковые вентили, шаровые краны, стальные фланцы и др. </div>
-
-                    </div>
-                </a>
-            </div>
-
-            
-            <div class="col-lg-4 prem-main-card">
-                <a href="{{ categories.2.get_absolute_url }}" class="prem-main-a">
-                    <div class="prem-main__item">
-                        <div class="prem-main__img">
-                            <img src="{% static 'img/pipe.svg' %}" alt="Изготовление стендов датчиков КИПиА" 
-                            style="width: 60px; height: 60px;">
-                        </div>
-                        <div class="services-main__title">Изготовление стендов датчиков КИПиА</div>
-
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-lg-4 prem-main-card">
-                <a href="{{ categories.3.get_absolute_url }}" class="prem-main-a">
-                    <div class="prem-main__item">
-                        <div class="prem-main__img">
-                            <img src="{% static 'img/kipia.svg' %}" 
-                            alt="Осуществление поставки контрольно-измерительных 
-                            приборов и средств автоматизации"
-                            style="width: 60px; height: 60px;">
-                        </div>
-                        <div class="services-main__title">Осуществление поставки контрольно-измерительных 
-                            приборов и средств автоматизации</div>
-
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-lg-4 prem-main-card">
-                <a href="{{ categories.4.get_absolute_url }}" class="prem-main-a">
-                    <div class="prem-main__item">
-                        <div class="prem-main__img">
-                            <img src="{% static 'img/truba_mont.svg' %}" alt="Труба для монтажа КИПиА и её крепёжные элемены"
-                            style="width: 60px; height: 60px;">
-                        </div>
-                        <div class="services-main__title">Труба для монтажа КИПиА и её крепёжные элементы</div>
-
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-lg-4 prem-main-card">
-                <a href="{{ categories.5.get_absolute_url }}" class="prem-main-a">
-                    <div class="prem-main__item">
-                        <div class="prem-main__img">
-                            <img src="{% static 'img/electric_panel.svg' %}" alt="Эл. Шкафы и шкафы систем автоматизации КИПиА"
-                            style="width: 60px; height: 60px;">
-                        </div>
-                        <div class="services-main__title">Электрические шкафы и шкафы систем автоматизации КИПиА</div>
-
-                    </div>
-                </a>
-            </div>
-
-            
+            {% endfor %}
+           
         </div>
+        {% else %}
+        {% endif %}
     </div>
     <!-- КОНЕЦ Блок Продукция -->
 

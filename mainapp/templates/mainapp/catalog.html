@@ -8,12 +8,16 @@
 
     <!-- Block search-->
     <div class="container">
+        <div class="crumb mb-3">
+            <a href="{% url 'mainapp:index' %}">Главная</a><span class="razdel">/</span><b>{{ category.name }}</b>
+        </div>
         <form class="d-flex" role="search" method="GET" action="#">
           <input class="form-control me-2" name="q" type="search" placeholder="Поиск" aria-label="Поиск">
           <button class="btn btn-outline-success" type="submit" href="">Поиск</button>
         </form>
     </div>
     <!-- End Block search-->
+    {% if categories %}
     <!-- Блок Заголовок страницы -->
     <div class="container">
         <h1 class="title_page">{{ category.name }}</h1>
@@ -25,31 +29,23 @@
         <div class="col-md-3 l_c" style="background: #E96300;color: white;">
             <h2 style="margin-top: 20px;" id="catalog-product"> Каталог</h2>
             <ul class="list-group">
-                <li class="list-group-item {% if categories.0.slug == category.slug %}activ{% endif %}"> 
-                    <a href="{% url 'mainapp:catalog' categories.0.slug %}">
-                    Изготовление трубопроводной арматуры для КИПиА</a> </li>
-                <li class="list-group-item {% if categories.1.slug == category.slug %}activ{% endif %}"> 
-                    <a href="{% url 'mainapp:catalog' categories.1.slug %}">Запорные, регулирующие клапаны. Игольчатые, сальниковые вентили, шаровые краны, стальные фланцы и др.</a> </li>
-                <li class="list-group-item {% if categories.2.slug == category.slug %}activ{% endif %}"> 
-                    <a href="{% url 'mainapp:catalog' categories.2.slug %}">Изготовление стендов датчиков КИПиА</a> </li>
-                <li class="list-group-item {% if categories.3.slug == category.slug %}activ{% endif %}"> 
-                    <a href="{% url 'mainapp:catalog' categories.3.slug %}">Осуществление поставки контрольно-измерительных приборов и средств автоматизации</a> </li>
-                <li class="list-group-item {% if categories.4.slug == category.slug %}activ{% endif %}"> 
-                    <a href="{% url 'mainapp:catalog' categories.4.slug %}">Труба для монтажа КИПиА и её крепёжные элементы</a> </li>
-                <li class="list-group-item {% if categories.5.slug == category.slug %}activ{% endif %}"> 
-                    <a href="{% url 'mainapp:catalog' categories.5.slug %}">Электрические шкафы и шкафы систем автоматизации КИПиА</a> </li>
+                {% for cat in categories %}
+                <li class="list-group-item {% if cat.slug == category.slug %}activ{% endif %}"> 
+                    <a href="{{ cat.get_absolute_url }}">
+                    {{ cat.name }}</a> </li>
+                {% endfor %}
             </ul>
         </div>
         <!--КОНЕЦ Левая колонка-->
       
            
-        <!-- Header-->
+        <!-- Правая колонка-->
         <div class="col-md-10 col-sm-12 d-flex flex-wrap justify-content-around">
             {% for group in groups_category %}
             <!--Карточка-->
             <div class="product_card">
                 <div class="">
-                    <img class="product_card_img" src="/static/{{ group.url_img }}">
+                    <img class="product_card_img" src="{{ group.url_img }}">
                 </div>
                 <div class="product_card_text">
                     <div class="pc_title">{{ group.name }}</div>
@@ -68,10 +64,13 @@
      
             
         </div>
-        <!--КОНЕЦ Карточки товаров-->
+        <!--КОНЕЦ Правой колонки-->
        
     </div>
     <!-- КОНЕЦ Блок Каталог -->
+     {% else %}
+        <h1 class="title_page">Информации пока нет</h1>
+     {% endif %}
    
     {% block help %}
     {% include 'includes/inc_help.html' %}
