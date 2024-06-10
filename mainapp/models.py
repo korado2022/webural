@@ -8,12 +8,12 @@ class Category(models.Model):
     """
     Модель категории товара содержит в себе поля:
     name - название категории
-    text - описание категории
+    url_img - ссылка на изображение категории
     slug - ссылка на категорию
     """
 
     name = models.CharField(max_length=255, unique=True)
-    text = RichTextField(blank=True)
+    url_img = models.TextField(blank=True)
     slug = models.SlugField(max_length=128, unique=True)
 
 
@@ -33,7 +33,6 @@ class Group(models.Model):
     """
     Модель группы товара содержит в себе поля:
     name - название группы
-    description - краткое описание группы
     category - категория группы
     url_img - ссылка на изображение группы
     text - подробное описание группы
@@ -41,7 +40,6 @@ class Group(models.Model):
     """
 
     name = models.CharField(max_length=255, unique=True)
-    description = models.TextField(blank=True)
     category = models.ForeignKey(Category, on_delete=models.CASCADE, related_name="category")
     url_img = models.TextField(blank=True)
     text = RichTextField(blank=True)
@@ -64,7 +62,6 @@ class Subgroup(models.Model):
     """
     Модель подгруппы товара содержит в себе поля:
     name - название подгруппы
-    description - краткое описание подгруппы
     group - группа подгруппы
     url_img - ссылка на изображение подгруппы
     text - подробное описание подгруппы
@@ -72,7 +69,6 @@ class Subgroup(models.Model):
     """
 
     name = models.CharField(max_length=255, unique=True)
-    description = models.TextField(blank=True)
     group = models.ForeignKey(Group, on_delete=models.CASCADE, related_name="group")
     url_img = models.TextField(blank=True)
     text = RichTextField(blank=True)
